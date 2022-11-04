@@ -4,14 +4,19 @@ import { GoPrimitiveDot } from 'react-icons/go';
 import { Stacked, Pie, Button, SparkLine } from '../components';
 import { earningData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
+import { GridComponent, ColumnsDirective, ColumnDirective, Resize, Sort, ContextMenu, Filter, Page, ExcelExport, PdfExport, Edit, Inject } from '@syncfusion/ej2-react-grids';
+
+import { ordersData, contextMenuItems, ordersGrid } from '../data/dummy';
+import { Header } from '../components';
 
 
 const Ecommerce = () => {
+  const editing = { allowDeleting: true, allowEditing: true };
 
   return (
-    <div className="mt-24">
-      <div className="flex flex-wrap lg:flex-nowrap justify-center ">
-        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-gradient-to-r from-violet-200 to-cyan-200 bg-no-repeat bg-cover bg-center">
+    <div className="mt-6">
+      <div className="flex flex-wrap justify-center ">
+        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full p-8 pt-9 m-3 bg-gradient-to-r from-violet-200 to-cyan-200 bg-no-repeat bg-cover bg-center">
           <div className="flex justify-between items-center">
               <div>
                 <p className="font-bold text-zinc-700">Earnings</p>
@@ -113,6 +118,22 @@ const Ecommerce = () => {
                 <Stacked width='320px' height='360px' />
               </div>
             </div>
+            <GridComponent
+        id="gridcomp"
+        dataSource={ordersData}
+        allowPaging
+        allowSorting
+        allowExcelExport
+        allowPdfExport
+        contextMenuItems={contextMenuItems}
+        editSettings={editing}
+      >
+        <ColumnsDirective>
+          {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+          {ordersGrid.map((item, index) => <ColumnDirective key={index} {...item} />)}
+        </ColumnsDirective>
+        <Inject services={[Resize, Sort, ContextMenu, Filter, Page, ExcelExport, Edit, PdfExport]} />
+      </GridComponent>
           </div>
         </div>
       </div>
