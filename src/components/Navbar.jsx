@@ -60,7 +60,7 @@ const Navbar = () => {
           icon={<FiShoppingCart />} 
           />
         <NavButton 
-          title='Cart' 
+          title='Chat' 
           customFunc={() => handleClick('chat')}
           color={currentColor}
           icon={<BsChatLeft />} 
