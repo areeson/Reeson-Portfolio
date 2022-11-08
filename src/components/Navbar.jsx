@@ -12,7 +12,7 @@ import {useStateContext } from '../contexts/ContextProvider';
 
 const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
   <TooltipComponent content={ title } position='BottomCenter'>
-    <button type='button' onClick={ customFunc } 
+    <button type='button' onClick={ customFunc }
     style={{ color }}
     className='relative text-xl rounded-full p-3 hover:bg-light-gray'
     >
@@ -36,7 +36,7 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    if(screenSize <= 900) {
+    if(screenSize <= 1100) {
       setActiveMenu(false);
     } else {
       setActiveMenu(true);
@@ -46,7 +46,7 @@ const Navbar = () => {
   return (
     <div className='flex justify-between p-2 md:mx-6 relative'>
       <NavButton 
-        title='Menu' 
+        title='Menu'
         customFunc={() => setActiveMenu(
           ( prevActiveMenu ) => !prevActiveMenu )} 
         color={currentColor}
@@ -60,7 +60,7 @@ const Navbar = () => {
           icon={<FiShoppingCart />} 
           />
         <NavButton 
-          title='Cart' 
+          title='Chat' 
           customFunc={() => handleClick('chat')}
           color={currentColor}
           icon={<BsChatLeft />} 
