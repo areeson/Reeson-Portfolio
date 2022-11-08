@@ -10,27 +10,31 @@ import { ordersData, contextMenuItems, ordersGrid } from '../data/dummy';
 import { Header } from '../components';
 
 
-const Ecommerce = () => {
+const Home = () => {
   const { currentColor } = useStateContext();
   const editing = { allowDeleting: true, allowEditing: true };
 
   return (
     <div className="mt-6">
       <div className="flex flex-wrap justify-center ">
-        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full p-8 pt-9 m-3 bg-gradient-to-r from-violet-200 to-cyan-200 bg-no-repeat bg-cover bg-center">
+        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 rounded-xl w-full p-14 bg-gradient-to-r from-violet-200 to-cyan-200 bg-no-repeat bg-cover bg-center text-center">
           <div className="flex justify-between items-center">
-              <div>
-                <p className="font-bold text-zinc-700">Earnings</p>
-                <p className="text-2xl">$63,448.78</p>
+              <div className='flex flex-col items-center'>
+                <p className="text-8xl text-zinc-800 mb-2">Reeson Portfolio</p>
+                <p className="text-2xl">Lorem Ipsum blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
               </div>
           </div>
           <div className='mt-6'>
             <Button 
               color='white'
               bgColor={currentColor}
-              text='Download'
-              borderRadius='10px'
-              size='md'
+              text='Projects'
+              borderRadius='50px'
+              paddingLeft='35px'
+              paddingRight='35px'
+              paddingTop='20px'
+              paddingBottom='20px'
+              fontSize='25px'
             />
           </div>
         </div>
@@ -125,4 +129,4 @@ const Ecommerce = () => {
   )
 }
 
-export default Ecommerce
+export default Home
