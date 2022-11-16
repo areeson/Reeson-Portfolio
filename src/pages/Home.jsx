@@ -39,11 +39,18 @@ const Home = () => {
           mr-8
           ml-8
           ">
-          <div className="flex justify-between items-center mt-8">
+          <div className="flex justify-between items-center h-full">
               <div className='flex flex-col items-center'>
-                <p className="text-8xl text-zinc-800 mb-6 dark:text-gray-100">Reeson Portfolio</p>
-                <p className="text-2xl mb-6">Lorem Ipsum blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-                <Button 
+                <p className="text-8xl text-zinc-800 dark:text-gray-100">Reeson Portfolio</p>
+                <p 
+                  className="
+                    text-2xl
+                    m-5
+                    md:m-11
+                  ">
+                  Lorem Ipsum blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                </p>
+                <Button
                   color='white'
                   bgColor={currentColor}
                   text='Projects'
@@ -104,8 +111,8 @@ const Home = () => {
                   {item.title}
                 </p>
               </div>
-              <div className='w-full h-2/3'>
-                <p className='text-sm text-gray-400 mt-1'>
+              <div className='w-full h-2/3 '>
+                <p className='text-sm text-gray-400 m-5'>
                   {item.description}
                 </p>
               </div>
