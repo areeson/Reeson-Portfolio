@@ -16,13 +16,14 @@ const Home = () => {
 
   return (
     <div className="">
-      <div className="flex flex-wrap justify-center h-screen overflow-hidden">
+      <div 
+        className="flex flex-wrap justify-center h-screen overflow-hidden h-94v"
+        >
         <div className="
           bg-white
           m-3
           rounded-xl
           w-full
-          p-14
           bg-gradient-to-r
           from-yellow-100 to-cyan-200  
           dark:from-violet-800 dark:to-cyan-800
@@ -35,26 +36,27 @@ const Home = () => {
           content-center
           items-center
           h-1/2
+          mr-8
+          ml-8
           ">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center mt-8">
               <div className='flex flex-col items-center'>
-                <p className="text-8xl text-zinc-800 mb-8 dark:text-gray-100">Reeson Portfolio</p>
-                <p className="text-2xl mb-10">Lorem Ipsum blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                <p className="text-8xl text-zinc-800 mb-6 dark:text-gray-100">Reeson Portfolio</p>
+                <p className="text-2xl mb-6">Lorem Ipsum blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                <Button 
+                  color='white'
+                  bgColor={currentColor}
+                  text='Projects'
+                  borderRadius='50px'
+                  paddingLeft='35px'
+                  paddingRight='35px'
+                  paddingTop='20px'
+                  paddingBottom='20px'
+                  fontSize='25px'
+                />
               </div>
           </div>
-          <div className='mt-6'>
-            <Button 
-              color='white'
-              bgColor={currentColor}
-              text='Projects'
-              borderRadius='50px'
-              paddingLeft='35px'
-              paddingRight='35px'
-              paddingTop='20px'
-              paddingBottom='20px'
-              fontSize='25px'
-            />
-          </div>
+
         </div>
 
         <div className='flex m-3 flex-wrap justify-center gap-8 items-center w-full h-1/2 -mt-10'>
@@ -88,15 +90,24 @@ const Home = () => {
               </p> */}
               <div className='
               w-full 
-              h-1/2
+              h-1/3
               bg-gradient-to-r
               from-yellow-100 to-cyan-200  
               dark:from-violet-800 dark:to-cyan-800
               dark:text-gray-300
               rounded-2xl
-              ' />
-              <div className='w-full h-1/2'>
-                <p>hi</p>
+              flex
+              items-center
+              justify-center
+              '>
+                <p className='text-lg text-gray-400'>
+                  {item.title}
+                </p>
+              </div>
+              <div className='w-full h-2/3'>
+                <p className='text-sm text-gray-400 mt-1'>
+                  {item.description}
+                </p>
               </div>
             </div>
           ))}

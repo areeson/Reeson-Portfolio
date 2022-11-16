@@ -541,32 +541,16 @@ export const chatData = [
 
 export const homeCardData = [
   {
-    icon: <MdOutlineSupervisorAccount />,
-    amount: '39,354',
-    percentage: '-4%',
-    title: 'Customers',
-    iconColor: '#03C9D7',
-    iconBg: '#E5FAFB',
-    pcColor: 'text-red-600',
+    title: 'My Background',
+    description: 'My Background'
   },
   {
-    icon: <BsBoxSeam />,
-    amount: '4,396',
-    percentage: '+23%',
-    title: 'Products',
-    iconColor: 'rgb(255, 244, 229)',
-    iconBg: 'rgb(254, 201, 15)',
-    pcColor: 'text-green-600',
+    title: 'Resume',
+    description: 'My Resume'
   },
   {
-    icon: <FiBarChart />,
-    amount: '423,39',
-    percentage: '+38%',
-    title: 'Sales',
-    iconColor: 'rgb(228, 106, 118)',
-    iconBg: 'rgb(255, 244, 229)',
-
-    pcColor: 'text-green-600',
+    title: 'Outside The Office',
+    description: 'Outdoorsy shit'
   }
 ];
 
