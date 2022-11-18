@@ -4,6 +4,7 @@ import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, Fi
 import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
+import { SlPaperClip } from 'react-icons/sl';
 import { MdOutlineSupervisorAccount, MdOutlineSchool } from 'react-icons/md';
 import { HiOutlineRefresh, HiOutlineHome, HiOutlineBriefcase } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
@@ -445,7 +446,7 @@ export const links = [
   },
 
   {
-    title: 'Pages',
+    title: 'Main',
     links: [
       {
         name: 'Projects',
@@ -456,11 +457,12 @@ export const links = [
         icon: <MdOutlineSchool />,
       },
       {
-        name: 'customers',
-        icon: <RiContactsLine />,
+        name: 'resume',
+        icon: <SlPaperClip />,
       },
     ],
   },
+
   {
     title: '@Syncfusion Practice',
     links: [
@@ -541,16 +543,19 @@ export const chatData = [
 
 export const homeCardData = [
   {
-    title: 'My Background',
-    description: 'My Background'
+    title: 'Professional Background',
+    description: 'My Background',
+    link: 'background'
   },
   {
     title: 'Resume',
-    description: 'My Resume'
+    description: 'My Resume',
+    link: 'resume'
   },
   {
-    title: 'Outside The Office',
-    description: 'Outdoorsy shit'
+    title: 'Personal Background',
+    description: 'Outdoorsy shit',
+    link: 'hobbies'
   }
 ];
 

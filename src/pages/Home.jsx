@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom';
 import {BsCurrencyDollar } from 'react-icons/bs';
 import { GoPrimitiveDot } from 'react-icons/go';
 import { Stacked, Pie, Button, SparkLine } from '../components';
@@ -17,11 +18,12 @@ const Home = () => {
   return (
     <div className="">
       <div 
-        className="flex flex-wrap justify-center h-screen overflow-hidden h-94v"
+        className="flex flex-wrap justify-center h-screen overflow-hidden h-94v -mt-16"
         >
         <div className="
           bg-white
           m-3
+          mt-16
           rounded-xl
           w-full
           bg-gradient-to-r
@@ -46,9 +48,9 @@ const Home = () => {
                   className="
                     text-2xl
                     m-5
-                    md:m-11
+                    sm:m-4 md:m-8 lg:m-12
                   ">
-                  Lorem Ipsum blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                  From a few Google searches to a new degree and career pursuit.
                 </p>
                 <Button
                   color='white'
@@ -66,7 +68,7 @@ const Home = () => {
 
         </div>
 
-        <div className='flex m-3 flex-wrap justify-center gap-8 items-center w-full h-1/2 -mt-10'>
+        <div className='flex -mt-12 flex-wrap justify-center gap-8 items-center w-full h-1/2'>
           {homeCardData.map((item) => (
             <div
               key={item.title} 
@@ -75,26 +77,9 @@ const Home = () => {
               dark:text-gray-200 dark:bg-secondary-dark-bg 
               w-1/4 
               rounded-2xl
-              h-1/2'
+              h-2/3'
             >
-              {/* <button 
-                type='button'
-                style={{ color: item.iconColor, backgroundColor: item.iconBg }}
-                className='text-2xl opacity-0.9 rounded-full p-4 hover:drop-shadow-xl'
-              >
-              {item.icon}
-              </button>
-              <p className='mt-3'>
-                <span className='text-log font-semibold'>
-                  {item.amount}
-                </span>
-                <span className={`text-sm ${item.pcColor} ml-2`}>
-                  {item.percentage}
-                </span>
-              </p>
-              <p className='text-sm text-gray-400 mt-1'>
-                {item.title}
-              </p> */}
+            <Link to={`/${item.link}`}>
               <div className='
               w-full 
               h-1/3
@@ -107,16 +92,17 @@ const Home = () => {
               items-center
               justify-center
               '>
-                <p className='text-lg text-gray-400'>
-                  {item.title}
-                </p>
               </div>
               <div className='w-full h-2/3 '>
-                <p className='text-sm text-gray-400 m-5'>
+                <p className='text-xl text-gray-300 m-6 mt-8'>
+                  {item.title}
+                </p>
+                <p className='text-md text-gray-400 m-6'>
                   {item.description}
                 </p>
               </div>
-            </div>
+            </Link>
+          </div>
           ))}
         </div>
       </div>
