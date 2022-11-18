@@ -5,7 +5,7 @@ import { employeesData, employeesGrid } from '../data/dummy';
 import { Header } from '../components';
 
 
-const Employees = () => {
+const Education = () => {
   const editing = { allowDeleting: true, allowEditing: true };
 
   return (
@@ -35,4 +35,4 @@ const Employees = () => {
   )
 }
 
-export default Employees
+export default Education

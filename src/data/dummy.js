@@ -3,10 +3,10 @@ import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutline
 import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
 import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
-import { IoMdContacts } from 'react-icons/io';
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
-import { MdOutlineSupervisorAccount } from 'react-icons/md';
-import { HiOutlineRefresh, HiOutlineHome } from 'react-icons/hi';
+import { SlPaperClip } from 'react-icons/sl';
+import { MdOutlineSupervisorAccount, MdOutlineSchool } from 'react-icons/md';
+import { HiOutlineRefresh, HiOutlineHome, HiOutlineBriefcase } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
 import { GiLouvrePyramid } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
@@ -436,7 +436,7 @@ export const employeesGrid = [
 
 export const links = [
   {
-    title: 'Dashboard',
+    title: '',
     links: [
       {
         name: 'home',
@@ -446,24 +446,25 @@ export const links = [
   },
 
   {
-    title: 'Pages',
+    title: 'Main',
     links: [
       {
-        name: 'orders',
-        icon: <AiOutlineShoppingCart />,
+        name: 'Projects',
+        icon: <HiOutlineBriefcase />,
       },
       {
-        name: 'employees',
-        icon: <IoMdContacts />,
+        name: 'education',
+        icon: <MdOutlineSchool />,
       },
       {
-        name: 'customers',
-        icon: <RiContactsLine />,
+        name: 'resume',
+        icon: <SlPaperClip />,
       },
     ],
   },
+
   {
-    title: 'Apps',
+    title: '@Syncfusion Practice',
     links: [
       {
         name: 'calendar',
@@ -480,44 +481,6 @@ export const links = [
       {
         name: 'color-picker',
         icon: <BiColorFill />,
-      },
-    ],
-  },
-  {
-    title: 'Charts',
-    links: [
-      {
-        name: 'line',
-        icon: <AiOutlineStock />,
-      },
-      {
-        name: 'area',
-        icon: <AiOutlineAreaChart />,
-      },
-
-      {
-        name: 'bar',
-        icon: <AiOutlineBarChart />,
-      },
-      {
-        name: 'pie',
-        icon: <FiPieChart />,
-      },
-      {
-        name: 'financial',
-        icon: <RiStockLine />,
-      },
-      {
-        name: 'color-mapping',
-        icon: <BsBarChart />,
-      },
-      {
-        name: 'pyramid',
-        icon: <GiLouvrePyramid />,
-      },
-      {
-        name: 'stacked',
-        icon: <AiOutlineBarChart />,
       },
     ],
   },
@@ -578,44 +541,22 @@ export const chatData = [
   },
 ];
 
-export const earningData = [
+export const homeCardData = [
   {
-    icon: <MdOutlineSupervisorAccount />,
-    amount: '39,354',
-    percentage: '-4%',
-    title: 'Customers',
-    iconColor: '#03C9D7',
-    iconBg: '#E5FAFB',
-    pcColor: 'text-red-600',
+    title: 'Professional Background',
+    description: 'My Background',
+    link: 'background'
   },
   {
-    icon: <BsBoxSeam />,
-    amount: '4,396',
-    percentage: '+23%',
-    title: 'Products',
-    iconColor: 'rgb(255, 244, 229)',
-    iconBg: 'rgb(254, 201, 15)',
-    pcColor: 'text-green-600',
+    title: 'Resume',
+    description: 'My Resume',
+    link: 'resume'
   },
   {
-    icon: <FiBarChart />,
-    amount: '423,39',
-    percentage: '+38%',
-    title: 'Sales',
-    iconColor: 'rgb(228, 106, 118)',
-    iconBg: 'rgb(255, 244, 229)',
-
-    pcColor: 'text-green-600',
-  },
-  {
-    icon: <HiOutlineRefresh />,
-    amount: '39,354',
-    percentage: '-12%',
-    title: 'Refunds',
-    iconColor: 'rgb(0, 194, 146)',
-    iconBg: 'rgb(235, 250, 242)',
-    pcColor: 'text-red-600',
-  },
+    title: 'Personal Background',
+    description: 'Outdoorsy shit',
+    link: 'hobbies'
+  }
 ];
 
 export const recentTransactions = [
