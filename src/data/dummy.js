@@ -1,15 +1,16 @@
 import React from 'react';
-import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
-import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
+import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineMail } from 'react-icons/ai';
+import { FiShoppingBag, FiEdit, FiSettings, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
 import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
-import { RiContactsLine, RiStockLine } from 'react-icons/ri';
+import { RiTodoLine, RiStockLine } from 'react-icons/ri';
 import { SlPaperClip } from 'react-icons/sl';
 import { MdOutlineSupervisorAccount, MdOutlineSchool } from 'react-icons/md';
 import { HiOutlineRefresh, HiOutlineHome, HiOutlineBriefcase } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
 import { GiLouvrePyramid } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
+import headshot from './headshot.jpg';
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
 import avatar3 from './avatar3.png';
@@ -453,7 +454,7 @@ export const links = [
         icon: <HiOutlineBriefcase />,
       },
       {
-        name: 'education',
+        name: 'Degrees & Certs',
         icon: <MdOutlineSchool />,
       },
       {
@@ -490,54 +491,71 @@ export const cartData = [
   {
     image:
       product5,
-    name: 'butterscotch ice-cream',
-    category: 'Milk product',
-    price: '$250',
+    name: 'Simple Tee',
+    category: 'Reeson Studio',
+    price: '$35',
   },
   {
     image:
       product6,
-    name: 'Supreme fresh tomato',
-    category: 'Vegetable Item',
-    price: '$450',
+    name: 'Mini Me Support',
+    category: 'Tech Line',
+    price: '$200',
   },
   {
     image:
       product7,
-    name: 'Red color candy',
-    category: 'Food Item',
-    price: '$190',
+    name: 'Camera Strap',
+    category: 'Photography Line',
+    price: '$30',
+  },
+];
+
+export const notificationData = [
+  {
+    image:
+      headshot,
+    message: 'Andrew Joined the Team!',
+    desc: 'Say Hello!',
+    time: '9:08 AM',
+  },
+  {
+    image:
+      avatar3,
+    message: 'New Project Posted',
+    desc: 'Check it out!',
+    time: '11:56 AM',
+  },
+  {
+    image:
+      avatar4,
+    message: 'John Doe',
+    desc: 'Project Permission Request',
+    time: '4:39 AM',
   },
 ];
 
 export const chatData = [
   {
     image:
-      avatar2,
-    message: 'Roman Joined the Team!',
-    desc: 'Congratulate him',
+      avatar,
+    message: 'John Doe',
+    desc: 'New Private Message',
     time: '9:08 AM',
   },
   {
     image:
       avatar3,
-    message: 'New message received',
-    desc: 'Salma sent you new message',
+    message: 'Forest Gump',
+    desc: 'Liked your message',
     time: '11:56 AM',
   },
   {
     image:
       avatar4,
-    message: 'New Payment received',
-    desc: 'Check your earnings',
+    message: 'Proviso Project',
+    desc: 'Someone replied to your comment',
     time: '4:39 AM',
-  },
-  {
-    image:
-      avatar,
-    message: 'Jolly completed tasks',
-    desc: 'Assign her new tasks',
-    time: '1:12 AM',
   },
 ];
 
@@ -555,6 +573,61 @@ export const homeCardData = [
   {
     title: 'Personal Background',
     description: 'Outdoorsy shit',
+    link: 'hobbies'
+  }
+];
+
+export const projectsPersonalCardData = [
+  {
+    title: 'Weather API Dash',
+    description: 'Get an in dpeth look on the weather in your area',
+    link: ''
+  },
+  {
+    title: 'More Coming Soon',
+    description: 'Collecting my work for display',
+    link: 'resume'
+  },
+];
+
+export const projectsE36CardData = [
+  {
+    title: 'In Progress',
+    description: 'Check back for track car progress posts',
+    link: ''
+  },
+
+];
+
+export const projectsBUCardData = [
+  {
+    title: 'Proviso',
+    description: 'Capstone Project',
+    link: 'background'
+  },
+  {
+    title: 'Outland Adventure',
+    description: 'DESCRIPTION HERE',
+    link: 'resume'
+  },
+  {
+    title: 'Bank Application',
+    description: 'DESCRIPTION HERE',
+    link: 'hobbies'
+  },
+  {
+    title: 'Cable Calculator',
+    description: 'DESCRIPTION HERE',
+    link: 'hobbies'
+  },
+  {
+    title: 'FX JAVA',
+    description: 'DESCRIPTION HERE',
+    link: 'hobbies'
+  },
+  {
+    title: 'SOMETHING ELSE',
+    description: 'DESCRIPTION HERE',
     link: 'hobbies'
   }
 ];
@@ -754,25 +827,25 @@ export const themeColors = [
 
 export const userProfileData = [
   {
-    icon: <BsCurrencyDollar />,
+    icon: <FiSettings />,
     title: 'My Profile',
     desc: 'Account Settings',
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
   },
   {
-    icon: <BsShield />,
+    icon: <AiOutlineMail />,
     title: 'My Inbox',
     desc: 'Messages & Emails',
     iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(235, 250, 242)',
   },
   {
-    icon: <FiCreditCard />,
+    icon: <RiTodoLine />,
     title: 'My Tasks',
     desc: 'To-do and Daily Tasks',
-    iconColor: 'rgb(255, 244, 229)',
-    iconBg: 'rgb(254, 201, 15)',
+    iconColor: 'rgb(251, 200, 15)',
+    iconBg: 'rgb(255, 246, 200)',
   },
 ];
 
