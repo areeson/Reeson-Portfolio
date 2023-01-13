@@ -6,7 +6,7 @@ import { ordersData, contextMenuItems, ordersGrid, projectsBUCardData, projectsP
 import { Header } from '../components';
 
 
-const Orders = () => {
+const Projects = () => {
   const editing = { allowDeleting: true, allowEditing: true };
 
   return (
@@ -100,4 +100,4 @@ const Orders = () => {
   )
 }
 
-export default Orders
+export default Projects

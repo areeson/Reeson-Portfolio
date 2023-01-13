@@ -18,40 +18,17 @@ const Home = () => {
   return (
     <div className="">
       <div 
-        className="flex flex-wrap justify-center h-screen overflow-hidden h-94v -mt-16"
-        >
-        <div className="
-          bg-white
-          m-3
-          mt-16
-          rounded-xl
-          w-full
-          bg-gradient-to-r
-          from-yellow-100 to-cyan-200  
-          dark:from-violet-800 dark:to-cyan-800
-          dark:text-gray-300
-          bg-cover
-          bg-center
-          bg-no-repeat
-          flex
-          flex-col
-          content-center
-          items-center
-          h-1/2
-          mr-8
-          ml-8
-          ">
+        className="flex flex-wrap justify-center h-screen overflow-hidden h-94v -mt-16">
+        <div className="bg-white m-3 mt-16 rounded-xl w-full bg-gradient-to-r from-yellow-100 to-cyan-100 dark:from-violet-900 dark:to-cyan-900 dark:text-gray-300 bg-cover bg-center bg-no-repeat flex flex-col content-center items-center h-1/2 mr-8 ml-8 ">
+
           <div className="flex justify-between items-center h-full">
+
               <div className='flex flex-col items-center'>
                 <p className="text-8xl text-zinc-800 dark:text-gray-100">Reeson Portfolio</p>
-                <p 
-                  className="
-                    text-2xl
-                    m-5
-                    sm:m-4 md:m-8 lg:m-12
-                  ">
+                <p className="text-2xl m-5 sm:m-4 md:m-8 lg:m-12">
                   From a few Google searches to a new degree and career pursuit.
                 </p>
+                <Link to="/Projects">
                 <Button
                   color='white'
                   bgColor={currentColor}
@@ -63,7 +40,9 @@ const Home = () => {
                   paddingBottom='20px'
                   fontSize='25px'
                 />
+                </Link>
               </div>
+              
           </div>
 
         </div>
@@ -77,15 +56,16 @@ const Home = () => {
               dark:text-gray-200 dark:bg-secondary-dark-bg 
               w-1/4 
               rounded-2xl
-              h-2/3'
+              h-2/3
+              hover:drop-shadow-xl'
             >
             <Link to={`/${item.link}`}>
               <div className='
               w-full 
               h-1/3
               bg-gradient-to-r
-              from-yellow-100 to-cyan-200  
-              dark:from-violet-800 dark:to-cyan-800
+              from-cyan-100 to-yellow-100  
+              dark:from-cyan-700 dark:to-violet-900
               dark:text-gray-300
               rounded-2xl
               flex
@@ -94,10 +74,10 @@ const Home = () => {
               '>
               </div>
               <div className='w-full h-2/3 '>
-                <p className='text-xl text-gray-300 m-6 mt-8'>
+                <p className='text-xl dark:text-gray-100 text-gray-800 m-6 mt-8'>
                   {item.title}
                 </p>
-                <p className='text-md text-gray-400 m-6'>
+                <p className='text-md dark:text-gray-200 text-gray-600 m-6'>
                   {item.description}
                 </p>
               </div>
