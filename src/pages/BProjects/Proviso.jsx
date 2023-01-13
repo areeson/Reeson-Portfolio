@@ -13,7 +13,7 @@ const Proviso = () => {
   const editing = { allowDeleting: true, allowEditing: true };
 
   return (
-      <div className='flex flex-col h-screen h-94v overflow-y-auto -mt-16'>
+      <div className='flex flex-col h-screen h-94v overflow-y-auto -mt-16 dark:text-gray-100'>
         <div className='h-full 2xl:mt-40 2xl:mr-72 2xl:ml-72'>
           <div className='mr-28 ml-28'>
             <p className="text-xl mb-10 float-right">
