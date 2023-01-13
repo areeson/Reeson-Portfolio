@@ -10,7 +10,9 @@ const Projects = () => {
   const editing = { allowDeleting: true, allowEditing: true };
 
   return (
-      <div className='flex flex-col h-screen h-94v overflow-y-auto -mt-16'>
+      <div className='flex flex-col h-full h-94v overflow-y-auto
+      md:-mt-16 md:h-screen
+      '>
 
         <div className='bg-white dark:text-gray-100 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl mt-20 z-[1001]'>
           <Header category="Projects" title="Bellevue University" />

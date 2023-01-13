@@ -28,8 +28,8 @@ const Proviso = () => {
             ">
               1.11.23
             </p>
-            <p className="md:text-8xl text-4xl mb-10
-            md:mb-16
+            <p className="text-4xl mb-10
+            md:mb-16 md:text-8xl
             ">
               Capstone Project: 'Proviso'
             </p>
