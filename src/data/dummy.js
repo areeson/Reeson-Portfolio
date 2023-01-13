@@ -4,9 +4,8 @@ import { FiShoppingBag, FiEdit, FiSettings, FiBarChart, FiCreditCard, FiStar, Fi
 import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
 import { RiTodoLine, RiStockLine } from 'react-icons/ri';
-import { SlPaperClip } from 'react-icons/sl';
 import { MdOutlineSupervisorAccount, MdOutlineSchool } from 'react-icons/md';
-import { HiOutlineRefresh, HiOutlineHome, HiOutlineBriefcase } from 'react-icons/hi';
+import { HiOutlineRefresh, HiOutlineHome, HiOutlineBriefcase, HiOutlinePencil } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
 import { GiLouvrePyramid } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
@@ -461,8 +460,8 @@ export const links = [
         icon: <MdOutlineSchool />,
       },
       {
-        name: 'resume',
-        icon: <SlPaperClip />,
+        name: 'Blog',
+        icon: <HiOutlinePencil />,
       },
     ],
   },
@@ -569,9 +568,9 @@ export const homeCardData = [
     link: 'background'
   },
   {
-    title: 'Resume',
-    description: 'My Resume',
-    link: 'resume'
+    title: 'Blog',
+    description: 'Card link to Blog page',
+    link: 'blog'
   },
   {
     title: 'Personal Background',
@@ -584,12 +583,12 @@ export const projectsPersonalCardData = [
   {
     title: 'Weather API Dash',
     description: 'Get an in depth look on the weather in your area',
-    link: ''
+    link: 'Projects'
   },
   {
     title: 'More Coming Soon',
     description: 'Collecting my work for display',
-    link: ''
+    link: 'Projects'
   },
 ];
 
@@ -597,7 +596,7 @@ export const projectsE36CardData = [
   {
     title: 'In Progress',
     description: 'Check back for track car progress posts',
-    link: ''
+    link: 'Projects'
   },
 
 ];
@@ -611,22 +610,22 @@ export const projectsBUCardData = [
   {
     title: 'Outland Adventure',
     description: 'COMING SOON',
-    link: ''
+    link: 'Projects'
   },
   {
     title: 'Bank Application',
     description: 'COMING SOON',
-    link: ''
+    link: 'Projects'
   },
   {
     title: 'Cable Calculator',
     description: 'COMING SOON',
-    link: ''
+    link: 'Projects'
   },
   {
     title: 'FX JAVA',
     description: 'COMING SOON',
-    link: ''
+    link: 'Projects'
   },
 ];
 

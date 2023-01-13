@@ -14,34 +14,59 @@ const Proviso = () => {
 
   return (
       <div className='flex flex-col h-screen h-94v overflow-y-auto -mt-16 dark:text-gray-100'>
-        <div className='h-full 2xl:mt-40 2xl:mr-72 2xl:ml-72'>
-          <div className='mr-28 ml-28'>
-            <p className="text-xl mb-10 float-right">
+      {/* Responsive Design Work */}
+        <div className='h-full 
+        2xl:mt-40 2xl:mr-72 2xl:ml-72
+        md:mt-32 md:mr-36 md:ml-36
+        '>
+        {/* --- */}
+          <div className='mr-5 ml-5 mt-40
+          md:mr-28 md:ml-28 md:mt-20
+          '>
+            <p className="text-xl 
+            md:mb-10 md:float-right
+            ">
               1.11.23
             </p>
-            <p className="text-8xl mb-16">
+            <p className="md:text-8xl text-4xl mb-10
+            md:mb-16
+            ">
               Capstone Project: 'Proviso'
             </p>
-            <p className="text-2xl mb-5">
+            <p className="text-xl mb-5
+            md:text-2xl
+            ">
               My final project during my time at Bellevue. Put together as a group of 6, we built a reservation based site that would be used for a hypothetical hotel chain such as Hilton or Marriot. In our case, the chain is called Proviso.
             </p>
             <div className='flex flex-col items-end mb-16'>
-              <p className="text-xl mb-1 flex items-center">
+              <p className="text-lg -mb-2 flex items-center
+              md:text-xl
+              ">
                 <img src={headshot} className='rounded-full w-12 h-12 mr-3' /> Andrew Reeson, Developer
               </p>
-              <p className="text-xl mb-1">
+              <p className="text-lg mb-1
+              md:text-xl
+              ">
                 Kevin Finnis, Developer
               </p>
-              <p className="text-xl mb-1">
+              <p className="text-lg mb-1
+              md:text-xl
+              ">
                 Cabes Blah, Developer
               </p>
-              <p className="text-xl mb-1">
+              <p className="text-lg mb-1
+              md:text-xl
+              ">
                 Ryan Songcuan, Developer
               </p>
-              <p className="text-xl mb-1">
+              <p className="text-lg mb-1
+              md:text-xl
+              ">
                 DHadi, Developer
               </p>
-              <p className="text-xl">
+              <p className="text-lg
+              md:text-xl
+              ">
                 Ben Bordwell, Developer
               </p>
             </div>
@@ -52,13 +77,17 @@ const Proviso = () => {
               <p className='text-lg mb-10'>
                 If you'd like to see a tour of the site along with a look at the work behind the scenes checkout the video above. This was a project that ran 9 weeks long, it started with meeting the team and included the full software development cycle. This is one of the projects I'm most excited about as of recently because of the real feel of sharing responsibilities and opinions with a team of developers. There were time's I got to be the student and there were times I got to be the teacher, which led for a team culture. 
               </p>
-              <p className='text-3xl mb-6'>
+              <p className='text-2xl mb-6
+              md:text-3xl
+              '>
                 1. Setup
               </p>
               <p className='text-lg mb-10'>
                 The first thing we needed to do was get adjusted as a team. For us this meant making sure we had a better level of communication, we decided on Discord as a way to instant message, voice chat, and screen share for problem solving. Next we had to get a repository set up. Here we all unanimously agreed on Github as the way to share our code and keep the professor in the loop. We also set up the Kanban as preparation to stay organized through the development process. We then all set up our own local environment. We decided on staying consistent to Bellevue's education by using Eclipse as the IDE, Java as the backend along with some JavaScript thrown in, along with MySQL as the database. 
               </p>
-              <p className='text-3xl mb-6'>
+              <p className='text-2xl mb-6
+              md:text-3xl
+              '>
                 2. Technical Design Document
               </p>
               <p className='text-lg mb-5'>
@@ -71,13 +100,17 @@ const Proviso = () => {
                 <li>User Stories</li>
                 <li>Work Estimations + ToDo List Posted to Kanban Board</li>
               </ul>
-              <p className='text-3xl mb-6'>
+              <p className='text-2xl mb-6
+              md:text-3xl
+              '>
                 3. Prototype Build
               </p>
               <p className='text-lg mb-10'>
                 After more discussion on what the site will look like, taking in examples from other similar websites, we split up the pages and began putting together sketches for what we thought was best. We then made sure to have some basics such as a consistent header and footer between all pages as well as a consistent design before moving on from the sketch and wireframe process. This led to us having a batch of fine tuned prototypes put together through drawio.
               </p>
-              <p className='text-3xl mb-6'>
+              <p className='text-2xl mb-6
+              md:text-3xl
+              '>
                 4. Entity Relationship Diagram (ERD)
               </p>
               <p className='text-lg mb-5'>
@@ -89,7 +122,9 @@ const Proviso = () => {
                 <li>One Login has One Customer</li>
                 <li>One Reservation has One Payment</li>
               </ul>
-              <p className='text-3xl mb-6'>
+              <p className='text-2xl mb-6
+              md:text-3xl
+              '>
                 5. Building Database
               </p>
               <p className='text-lg mb-5'>
@@ -101,7 +136,9 @@ const Proviso = () => {
               <div className='mb-10'>
                 <img src={provisotables} className='h-56 w-56 mr-3' />
               </div>
-              <p className='text-3xl mb-6'>
+              <p className='text-2xl mb-6
+              md:text-3xl
+              '>
                 6. Development
               </p>
               <p className='text-lg mb-5'>
@@ -116,28 +153,22 @@ const Proviso = () => {
               <div class="aspect-w-16 aspect-h-9 mb-10">
                 <iframe src="https://www.youtube.com/embed/Zpum9A_SfFU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
-              <p className='text-3xl mb-6'>
+            <p className='text-2xl mb-6
+              md:text-3xl
+              '>
                 7. Testing
               </p>
               <p className='text-lg mb-10'>
                 Our testing was not overly complicated by any means. We used 'test plans' to make sure each week's build was working properly before submission. What this looked like was filling out an organized sheet with what to do and what the expectation or result should be. Then as a tester you go through grading how that went for you in practice with any extra notes if needed. 
               </p>
-              <p className='text-3xl mb-6'>
+              <p className='text-2xl mb-6
+              md:text-3xl
+              '>
                 8. Final Thoughts
               </p>
-              <p className='text-lg pb-10'>
+              <p className='text-lg pb-56'>
                 I felt that this was a very well rounded project for our capstone and allowed us to feel many parts from the software development lifecycle. Being able to work on a team through an entire project beginning to end was also a nice learning experience. The collaboration that involved for the first few weeks to make sure everyone was on the same page and able to communicate efficiently was a bigger task than any of us thought it would be at first. Looking at it now I wish there was a more modern design that could have been implemented but the design was also semi-restricted by group opinions and software limitations based on using Eclipse, MVC, Java compared to other frameworks used widely as of more recent.
               </p>
-
-
-
-
-
-
-
-
-
-
             </div>
           </div>
         </div>

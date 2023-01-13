@@ -2,6 +2,7 @@
 export { default as Home } from './Home';
 export { default as Projects } from './Projects';
 export { default as Education } from './Education';
+export { default as Blog } from './Main/Blog';
 
 // Apps
 

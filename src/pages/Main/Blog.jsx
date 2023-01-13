@@ -2,11 +2,11 @@ import React from 'react'
 import { Link, } from 'react-router-dom';
 import { GridComponent, ColumnsDirective, ColumnDirective, Resize, Sort, ContextMenu, Filter, Page, ExcelExport, PdfExport, Edit, Inject } from '@syncfusion/ej2-react-grids';
 
-import { ordersData, contextMenuItems, ordersGrid, projectsBUCardData, projectsPersonalCardData, projectsE36CardData} from '../data/dummy';
-import { Header } from '../components';
+import { ordersData, contextMenuItems, ordersGrid, projectsBUCardData, projectsPersonalCardData, projectsE36CardData} from '../../data/dummy';
+import { Header } from '../../components';
 
 
-const Projects = () => {
+const Blog = () => {
   const editing = { allowDeleting: true, allowEditing: true };
 
   return (
@@ -100,4 +100,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Blog
