@@ -20,6 +20,9 @@ import product2 from './product2.jpg';
 import product3 from './product3.jpg';
 import product4 from './product4.jpg';
 import product5 from './product5.jpg';
+import shirt from './shirt.jpeg';
+import minime from './minime.jpeg';
+import camerastrap from './camerastrap.jpeg';
 import product6 from './product6.jpg';
 import product7 from './product7.jpg';
 import product8 from './product8.jpg';
@@ -490,21 +493,21 @@ export const links = [
 export const cartData = [
   {
     image:
-      product5,
+      shirt,
     name: 'Simple Tee',
     category: 'Reeson Studio',
     price: '$35',
   },
   {
     image:
-      product6,
+      minime,
     name: 'Mini Me Support',
     category: 'Tech Line',
     price: '$200',
   },
   {
     image:
-      product7,
+      camerastrap,
     name: 'Camera Strap',
     category: 'Photography Line',
     price: '$30',
@@ -580,13 +583,13 @@ export const homeCardData = [
 export const projectsPersonalCardData = [
   {
     title: 'Weather API Dash',
-    description: 'Get an in dpeth look on the weather in your area',
+    description: 'Get an in depth look on the weather in your area',
     link: ''
   },
   {
     title: 'More Coming Soon',
     description: 'Collecting my work for display',
-    link: 'resume'
+    link: ''
   },
 ];
 
@@ -602,34 +605,29 @@ export const projectsE36CardData = [
 export const projectsBUCardData = [
   {
     title: 'Proviso',
-    description: 'Capstone Project',
-    link: 'background'
+    description: 'Capstone Project. A site for reserving a room for a hypothetical hotel chain running through Nebraska.',
+    link: 'proviso'
   },
   {
     title: 'Outland Adventure',
-    description: 'DESCRIPTION HERE',
-    link: 'resume'
+    description: 'COMING SOON',
+    link: ''
   },
   {
     title: 'Bank Application',
-    description: 'DESCRIPTION HERE',
-    link: 'hobbies'
+    description: 'COMING SOON',
+    link: ''
   },
   {
     title: 'Cable Calculator',
-    description: 'DESCRIPTION HERE',
-    link: 'hobbies'
+    description: 'COMING SOON',
+    link: ''
   },
   {
     title: 'FX JAVA',
-    description: 'DESCRIPTION HERE',
-    link: 'hobbies'
+    description: 'COMING SOON',
+    link: ''
   },
-  {
-    title: 'SOMETHING ELSE',
-    description: 'DESCRIPTION HERE',
-    link: 'hobbies'
-  }
 ];
 
 export const recentTransactions = [
@@ -801,27 +799,27 @@ export const medicalproBranding = {
 export const themeColors = [
   {
     name: 'blue-theme',
-    color: '#1A97F5',
+    color: '#38bdf8',
   },
   {
     name: 'green-theme',
-    color: '#03C9D7',
+    color: '#22d3ee',
   },
   {
     name: 'purple-theme',
-    color: '#7352FF',
+    color: '#c084fc',
   },
   {
     name: 'red-theme',
-    color: '#FF5C8E',
+    color: '#fb7185',
   },
   {
     name: 'indigo-theme',
-    color: '#1E4DB7',
+    color: '#818cf8',
   },
   {
-    color: '#FB9678',
     name: 'orange-theme',
+    color: '#fb923c',
   },
 ];
 
