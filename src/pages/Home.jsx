@@ -25,8 +25,7 @@ const Home = () => {
 
               <div className='flex flex-col items-center'>
                 <p className="text-8xl text-zinc-800 dark:text-gray-100">Reeson Portfolio</p>
-                <p 
-                  className="text-2xl m-5 sm:m-4 md:m-8 lg:m-12">
+                <p className="text-2xl m-5 sm:m-4 md:m-8 lg:m-12">
                   From a few Google searches to a new degree and career pursuit.
                 </p>
                 <Link to="/Projects">
@@ -66,7 +65,7 @@ const Home = () => {
               h-1/3
               bg-gradient-to-r
               from-cyan-100 to-yellow-100  
-              dark:from-cian-800 dark:to-violet-800
+              dark:from-cyan-700 dark:to-violet-900
               dark:text-gray-300
               rounded-2xl
               flex

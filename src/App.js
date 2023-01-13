@@ -4,7 +4,7 @@ import { MdOutlineBrightnessMedium } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
-import { Home, Projects, Calendar, Education, Stacked, Pyramid, Customers, Kanban, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, Line } from './pages';
+import { Home, Projects, Proviso, Calendar, Education, Stacked, Pyramid, Customers, Kanban, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, Line } from './pages';
 
 import { useStateContext } from './contexts/ContextProvider';
 
@@ -18,7 +18,7 @@ const App = () => {
         <BrowserRouter>
             <div className='flex relative dark:bg-main-dark-bg'>
                 <div className='fixed right-4 bottom-4' style={{ zIndex: '1000'}}>
-                    <TooltipComponent content='Settings' position='Top'>
+                    <TooltipComponent content='Themes' position='Top' openDelay={1000} closeDelay={1000}>
                         <button 
                             type='button' 
                             className='text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white' 
@@ -53,22 +53,34 @@ const App = () => {
                     {themeSettings && <ThemeSettings />}
 
                     <Routes>
-                    {/* dashboard  */}
+                    {/* Main  */}
                     <Route path="/" element={(<Home />)} />
                     <Route path="/home" element={(<Home />)} />
-
-                    {/* pages  */}
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/education" element={<Education />} />
-                    <Route path="/customers" element={<Customers />} />
 
-                    {/* apps  */}
+                    {/* Apps  */}
+
+                    {/* Bellevue University Main  */}
+
+                    {/* Bellevue University Projects Pages  */}
+                    <Route path="/proviso" element={<Proviso />} />
+                    
+                    {/* Personal Projects Main  */}
+
+                    {/* Personal Projects Pages */}
+
+                    {/* E36 Main  */}
+
+                    {/* E36 Pages  */}
+
+                    {/* @Syncfusion Practice  */}
+                    <Route path="/calendar" element={<Calendar />} />
                     <Route path="/kanban" element={<Kanban />} />
                     <Route path="/editor" element={<Editor />} />
-                    <Route path="/calendar" element={<Calendar />} />
-                    <Route path="/color-picker" element={<ColorPicker />} />
 
                     </Routes>
+
                 </div>
             </div>
         </div>
