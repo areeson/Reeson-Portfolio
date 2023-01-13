@@ -38,7 +38,7 @@ const App = () => {
                     </div>
                 )}
                 <div className={
-                    `dark:bg-main-dark-bg bg-main-bg min-h-screen w-full 
+                    `dark:bg-main-dark-bg bg-main-bg min-h-screen w-full overflow-hidden
                     ${ activeMenu 
                         ? 'md:ml-72' 
                         : 'flex-2' }
