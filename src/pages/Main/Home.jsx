@@ -2,13 +2,13 @@ import React from 'react'
 import { Link, NavLink } from 'react-router-dom';
 import {BsCurrencyDollar } from 'react-icons/bs';
 import { GoPrimitiveDot } from 'react-icons/go';
-import { Stacked, Pie, Button, SparkLine } from '../components';
-import { homeCardData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
-import { useStateContext } from '../contexts/ContextProvider';
+import { Stacked, Pie, Button, SparkLine } from '../../components';
+import { homeCardData, SparklineAreaData, ecomPieChartData } from '../../data/dummy';
+import { useStateContext } from '../../contexts/ContextProvider';
 import { GridComponent, ColumnsDirective, ColumnDirective, Resize, Sort, ContextMenu, Filter, Page, ExcelExport, PdfExport, Edit, Inject } from '@syncfusion/ej2-react-grids';
 
-import { ordersData, contextMenuItems, ordersGrid } from '../data/dummy';
-import { Header } from '../components';
+import { ordersData, contextMenuItems, ordersGrid } from '../../data/dummy';
+import { Header } from '../../components';
 
 
 const Home = () => {
@@ -28,7 +28,7 @@ const Home = () => {
 
           <div className="flex justify-between items-center h-full">
 
-              <div className='flex flex-col items-center'>
+              <div className='flex flex-col items-center text-center'>
                 <p className="text-4xl text-zinc-800 dark:text-gray-100
                 md:text-8xl
                 ">
@@ -59,7 +59,7 @@ const Home = () => {
         </div>
 
         <div className='mt-4 h-1/2 mb-5 w-4/5
-        md:flex md:flex-wrap md:justify-center md:items-center md:w-full md:-mt-12 md:gap-8 md:mb-0
+        lg:flex lg:flex-wrap lg:justify-center lg:items-center lg:w-full lg:-mt-12 lg:gap-6 lg:mb-0
         '>
           {homeCardData.map((item) => (
             <div
@@ -71,17 +71,17 @@ const Home = () => {
               mb-5
               rounded-2xl
               h-1/3
-              md:h-2/3
+              lg:h-2/3
               hover:drop-shadow-xl
-              md:w-[17%]
-              md:mb-0
+              lg:w-1/5
+              lg:mb-0
               '
             >
             <Link to={`/${item.link}`}>
               <div className='
               w-full 
               h-1/5
-              md:h-1/3
+              lg:h-1/3
               bg-gradient-to-r
               from-cyan-100 to-yellow-100  
               dark:from-cyan-700 dark:to-violet-900
@@ -93,15 +93,15 @@ const Home = () => {
               '>
               </div>
               <div className='w-full h-4/5 
-              md:h-2/3
+              lg:h-2/3
               '>
                 <p className='text-xl dark:text-gray-100 text-gray-800 ml-6 mt-2.5
-                md:mt-8 md:ml-6 md:mr-6
+                lg:mt-8 lg:ml-6 lg:mr-6
                 '>
                   {item.title}
                 </p>
                 <p className='text-md dark:text-gray-200 text-gray-600 ml-6 mt-1.5
-                md:ml-6 md:mt-3 md:mr-6
+                lg:ml-6 lg:mt-3 lg:mr-6
                 '>
                   {item.description}
                 </p>

@@ -456,7 +456,7 @@ export const links = [
         icon: <HiOutlineBriefcase />,
       },
       {
-        name: 'Degrees & Certs',
+        name: 'Education',
         icon: <MdOutlineSchool />,
       },
       {
@@ -565,7 +565,7 @@ export const homeCardData = [
   {
     title: 'Professional Background',
     description: 'My Background',
-    link: 'background'
+    link: 'Professional'
   },
   {
     title: 'Blog',
@@ -575,19 +575,19 @@ export const homeCardData = [
   {
     title: 'Personal Background',
     description: 'Outdoorsy shit',
-    link: 'hobbies'
+    link: 'Personal'
   }
 ];
 
 export const projectsPersonalCardData = [
   {
     title: 'Weather API Dash',
-    description: 'Get an in depth look on the weather in your area',
+    description: 'Get an in depth look on the weather in your area. Collecting project for presentation, coming soon!',
     link: 'Projects'
   },
   {
     title: 'More Coming Soon',
-    description: 'Collecting my work for display',
+    description: 'Collecting projects for presentation, coming soon!',
     link: 'Projects'
   },
 ];
@@ -609,24 +609,216 @@ export const projectsBUCardData = [
   },
   {
     title: 'Outland Adventure',
-    description: 'COMING SOON',
+    description: 'Gathering project for presentation, coming soon!',
     link: 'Projects'
   },
   {
     title: 'Bank Application',
-    description: 'COMING SOON',
+    description: 'Gathering project for presentation, coming soon!',
     link: 'Projects'
   },
   {
     title: 'Cable Calculator',
-    description: 'COMING SOON',
+    description: 'Gathering project for presentation, coming soon!',
     link: 'Projects'
   },
   {
     title: 'FX JAVA',
-    description: 'COMING SOON',
+    description: 'Gathering project for presentation, coming soon!',
     link: 'Projects'
   },
+];
+
+export const classesBUCardData1 = [
+  {
+    title: 'Foundation of Software Development',
+    link: 'Education',
+  },
+  {
+    title: 'Intro to Programming with Python',
+    link: 'Education',
+  },
+  {
+    title: 'Database Development and Use',
+    link: 'Education',
+  },
+  {
+    title: 'Programming with Java',
+    link: 'Education',
+  },
+  {
+    title: 'Web Development with HTML & CSS',
+    link: 'Education',
+  },
+  {
+    title: 'Intermediate Java Programming',
+    link: 'Education',
+  }
+]
+
+export const classesBUCardData2 = [
+  {
+    title: 'Secure Software Development',
+    link: 'Education',
+  },
+  {
+    title: 'Advanced Java Programming',
+    link: 'Education',
+  },
+  {
+    title: 'DevOps',
+    link: 'Education',
+  },
+  {
+    title: 'Server Side Development (JavaScript)',
+    link: 'Education',
+  },
+  {
+    title: 'Server-Side Scripting (PHP)',
+    link: 'Education',
+  },
+  {
+    title: 'Capstone in Software Development',
+    link: 'Education',
+  },
+];
+
+export const classesUNLCardData2 = [
+  {
+    title: 'Marketing Management',
+    link: 'Education',
+  },
+  {
+    title: 'Marketing',
+    link: 'Education',
+  },
+  {
+    title: 'Operation & Supply Chain',
+    link: 'Education',
+  },
+  {
+    title: 'Sales Force Management',
+    link: 'Education',
+  },
+  {
+    title: 'Customer Relation Management',
+    link: 'Education',
+  },
+  {
+    title: 'International Marketing',
+    link: 'Education',
+  },
+];
+
+export const classesUNLCardData4 = [
+  {
+    title: 'Business Plan Dev & Decision Making',
+    link: 'Education',
+  },
+  {
+    title: 'Legal Environment',
+    link: 'Education',
+  },
+  {
+    title: 'Manage Growth & Change',
+    link: 'Education',
+  },
+  {
+    title: 'Business Analytics & Info Analysis',
+    link: 'Education',
+  },
+  {
+    title: 'Sales Communication',
+    link: 'Education',
+  },
+  {
+    title: 'Business Policies',
+    link: 'Education',
+  },
+];
+
+export const classesUNLCardData3 = [
+  {
+    title: 'Managing Behavior in Organizations',
+    link: 'Education',
+  },
+  {
+    title: 'Finance',
+    link: 'Education',
+  },
+  {
+    title: 'Business Writing',
+    link: 'Education',
+  },
+  {
+    title: 'Accounting I',
+    link: 'Education',
+  },
+  {
+    title: 'Accounting II',
+    link: 'Education',
+  },
+  {
+    title: 'Entrepreneurship & Innovation',
+    link: 'Education',
+  },
+];
+
+export const classesUNLCardData1 = [
+  {
+    title: 'Statistics',
+    link: 'Education',
+  },
+  {
+    title: 'Macroeconomics',
+    link: 'Education',
+  },
+  {
+    title: 'Microeconomics',
+    link: 'Education',
+  },
+  {
+    title: 'Applied Calculus',
+    link: 'Education',
+  },
+  {
+    title: 'College Algebra & Trigonometry ',
+    link: 'Education',
+  },
+  {
+    title: 'Business Computer Applications',
+    link: 'Education',
+  },
+];
+
+export const certificationCardData1 = [
+  {
+    title: 'CS50x: Computer Science',
+    link: 'Education',
+  },
+  {
+    title: 'SoloLearn: Python 3',
+    link: 'Education',
+  },
+  {
+    title: 'Google Analytics',
+    link: 'Education',
+  },
+  {
+    title: 'Google Adwords',
+    link: 'Education',
+  }
+];
+
+export const volunteeringCardData1 = [
+  {
+    title: 'Community CROPS',
+    link: 'Education',
+  },
+  {
+    title: 'Royal Family Kids Camp',
+    link: 'Education',
+  }
 ];
 
 export const recentTransactions = [
