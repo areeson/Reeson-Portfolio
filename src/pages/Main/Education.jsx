@@ -1,13 +1,11 @@
 import React from 'react'
 import { Link, } from 'react-router-dom';
-import { GridComponent, ColumnsDirective, ColumnDirective, Resize, Sort, ContextMenu, Filter, Page, ExcelExport, PdfExport, Edit, Inject } from '@syncfusion/ej2-react-grids';
 
-import { ordersData, contextMenuItems, ordersGrid, classesBUCardData1, classesBUCardData2, classesUNLCardData1, classesUNLCardData2, classesUNLCardData3, classesUNLCardData4, certificationCardData1, volunteeringCardData1, projectsPersonalCardData, projectsE36CardData} from '../../data/dummy';
+import { classesBUCardData1, classesBUCardData2, classesUNLCardData1, classesUNLCardData2, classesUNLCardData3, classesUNLCardData4, certificationCardData1, volunteeringCardData1 } from '../../data/dummy';
 import { Header } from '../../components';
 
 
 const Education = () => {
-  const editing = { allowDeleting: true, allowEditing: true };
 
   return (
       <div className='flex flex-col h-[94vh] overflow-y-auto

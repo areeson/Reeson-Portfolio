@@ -24,12 +24,3 @@ export { default as Proviso } from './BProjects/Proviso';
 
 
 // E36 Pages
-
-
-// No Longer Used
-
-// @Syncfusion Practice
-export { default as Calendar } from './synfusion/Calendar';
-export { default as Kanban } from './synfusion/Kanban';
-export { default as Editor } from './synfusion/Editor';
-export { default as ColorPicker } from './synfusion/ColorPicker';
