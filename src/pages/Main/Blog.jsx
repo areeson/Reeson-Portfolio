@@ -2,11 +2,11 @@ import React from 'react'
 import { Link, } from 'react-router-dom';
 import { GridComponent, ColumnsDirective, ColumnDirective, Resize, Sort, ContextMenu, Filter, Page, ExcelExport, PdfExport, Edit, Inject } from '@syncfusion/ej2-react-grids';
 
-import { ordersData, contextMenuItems, ordersGrid, projectsBUCardData, projectsPersonalCardData, projectsE36CardData} from '../data/dummy';
-import { Header } from '../components';
+import { ordersData, contextMenuItems, ordersGrid, projectsBUCardData, projectsPersonalCardData, projectsE36CardData} from '../../data/dummy';
+import { Header } from '../../components';
 
 
-const Projects = () => {
+const Blog = () => {
   const editing = { allowDeleting: true, allowEditing: true };
 
   return (
@@ -41,7 +41,7 @@ const Projects = () => {
 
 
 
-        <div className='bg-white dark:text-gray-100 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl h-2/5'>
+        <div className='bg-white dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl h-2/5'>
           <Header category="Projects" title="Personal" />
 
           <div className='rounded-2xl flex h-60 overflow-x-auto scrollbar scrollbar-thumb-stone-100 dark:scrollbar-thumb-gray-700'>
@@ -71,7 +71,7 @@ const Projects = () => {
 
 
         <div className='bg-white dark:text-gray-100 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl h-2/5'>
-          <Header category="Projects" title="E36 Project Car" />
+          <Header category="Projects" title="E36 " />
 
           <div className='rounded-2xl flex h-60 overflow-x-auto scrollbar scrollbar-thumb-stone-100 dark:scrollbar-thumb-gray-700'>
             <div className='flex gap-5'>
@@ -100,4 +100,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Blog
