@@ -1,104 +1,94 @@
 import React from 'react'
-import { Link, } from 'react-router-dom';
-import { GridComponent, ColumnsDirective, ColumnDirective, Resize, Sort, ContextMenu, Filter, Page, ExcelExport, PdfExport, Edit, Inject } from '@syncfusion/ej2-react-grids';
+import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
+import { } from '../../data/dummy';
+import professional from '../../data/professional.jpg'
+import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
-import { ordersData, contextMenuItems, ordersGrid, projectsBUCardData, projectsPersonalCardData, projectsE36CardData} from '../../data/dummy';
-import { Header } from '../../components';
-
+import { useStateContext } from '../../contexts/ContextProvider';
 
 const Professional = () => {
-  const editing = { allowDeleting: true, allowEditing: true };
+  const { activeMenu, currentColor } = useStateContext();
+
 
   return (
-      <div className='flex flex-col h-full h-94v overflow-y-auto
-      md:-mt-16 md:h-screen
-      '>
+    <div className='flex flex-col h-screen h-94v overflow-y-auto -mt-16 dark:text-gray-100'>
 
-        <div className='bg-white dark:text-gray-100 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl mt-20 z-[1001]'>
-          <Header category="Projects" title="Bellevue University" />
+    {/* Responsive Design Work */}
+      <div className={`h-full 
+      2xl:mt-40 
+      md:mt-32 md:mr-36 md:ml-36
+      ${ activeMenu
+        ? '2xl:mr-[20rem] 2xl:ml-[20rem]'
+        : '2xl:mr-[30rem] 2xl:ml-[30rem]'
+      }
+      `}>
+    {/* ---------------------- */}
 
-          <div className='rounded-2xl flex h-60 overflow-x-auto scrollbar scrollbar-thumb-purple-50 dark:scrollbar-thumb-gray-700'>
-            <div className='flex gap-5'>
-              {projectsBUCardData.map((item) => (
-                <div key={item.title} className='bg-gray-50 dark:text-gray-200 dark:bg-gray-800 w-80 rounded-2xl h-5/6 hover:drop-shadow-md overflow-y-hidden'>
-                <Link to={`/${item.link}`}>
-
-                  <div className='w-full h-1/5 bg-gradient-to-r from-purple-300 to-white dark:from-purple-800 dark:to-gray-800 dark:text-gray-300 rounded-2xl flex items-center justify-center' />
-
-                  <div className='w-full h-4/5 '>
-                    <p className='text-xl dark:text-gray-100 text-gray-800 m-2'>
-                      {item.title}
-                    </p>
-                    <p className='text-md dark:text-gray-200 text-gray-600 m-2'>
-                      {item.description}
-                    </p>
-                  </div>
-
-                </Link>
-              </div>
-              ))}
-            </div>
+        <div className='flex'>
+          <div className='w-1/2'>
+            <img src={professional} className='rounded-lg' alt='Professional Picture of Andrew Reeson'/>
           </div>
-        </div>
 
+          <div className='w-1/2'>
+            <p className='text-4xl ml-8 mb-10' style={{ color: currentColor}}>
+              Andrew P. Reeson
+            </p>
 
-
-        <div className='bg-white dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl h-2/5'>
-          <Header category="Projects" title="Personal" />
-
-          <div className='rounded-2xl flex h-60 overflow-x-auto scrollbar scrollbar-thumb-stone-100 dark:scrollbar-thumb-gray-700'>
-            <div className='flex gap-5'>
-              {projectsPersonalCardData.map((item) => (
-                <div key={item.title} className='bg-gray-50 dark:text-gray-200 dark:bg-gray-800 w-80 rounded-2xl h-5/6 hover:drop-shadow-md overflow-y-hidden'>
-                <Link to={`/${item.link}`}>
-
-                  <div className='w-full h-1/5 bg-gradient-to-r from-yellow-200 to-white dark:from-yellow-800 dark:to-gray-800 dark:text-gray-300 rounded-2xl flex items-center justify-center' />
-
-                  <div className='w-full h-4/5 '>
-                    <p className='text-xl dark:text-gray-100 text-gray-800 m-2'>
-                      {item.title}
-                    </p>
-                    <p className='text-md dark:text-gray-200 text-gray-600 m-2'>
-                      {item.description}
-                    </p>
-                  </div>
-
-                </Link>
-              </div>
-              ))}
+            <div className='-ml-8 bg-black h-16 w-[23rem] mb-5 flex justify-center items-center'>
+              <p className='text-white text-5xl'>
+                PROFESSIONAL
+              </p>
             </div>
-          </div>
-        </div>
 
-
-
-        <div className='bg-white dark:text-gray-100 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl h-2/5'>
-          <Header category="Projects" title="E36 " />
-
-          <div className='rounded-2xl flex h-60 overflow-x-auto scrollbar scrollbar-thumb-stone-100 dark:scrollbar-thumb-gray-700'>
-            <div className='flex gap-5'>
-              {projectsE36CardData.map((item) => (
-                <div key={item.title} className='bg-gray-50 dark:text-gray-100 dark:bg-gray-800 w-80 rounded-2xl h-5/6 hover:drop-shadow-md overflow-y-hidden'>
-                <Link to={`/${item.link}`}>
-
-                  <div className='w-full h-1/5 bg-gradient-to-r from-sky-400 to-white dark:from-sky-800 dark:to-gray-800 dark:text-gray-300 rounded-2xl flex items-center justify-center' />
-
-                  <div className='w-full h-4/5 '>
-                    <p className='text-xl dark:text-gray-100 text-gray-800 m-2'>
-                      {item.title}
-                    </p>
-                    <p className='text-md dark:text-gray-200 text-gray-600 m-2'>
-                      {item.description}
-                    </p>
-                  </div>
-
-                </Link>
-              </div>
-              ))}
+            <div className='-ml-8 bg-black h-16 w-[22rem] flex justify-center items-center'>
+              <p className='text-white text-5xl'>
+                BACKGROUND
+              </p>
             </div>
+
+            <div className='flex'>
+
+              <div className='ml-8 mt-5 mb-5'>
+                  <TooltipComponent content='LinkedIn' position='Top' openDelay={1000} closeDelay={1000}>
+                  <a href="https://www.linkedin.com/in/andrewreeson/" target="_blank" rel="noopener noreferrer">
+                      <button 
+                          type='button' 
+                          className='text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white' 
+                          style={{ background: currentColor, borderRadius: '50%' }}>
+                          <AiFillLinkedin />
+                      </button>
+                    </a>
+                </TooltipComponent>
+              </div>
+
+              <div className='ml-5 mt-5 mb-5'>
+                  <TooltipComponent content='GitHub' position='Top' openDelay={1000} closeDelay={1000}>
+                  <a href="https://github.com/areeson" target="_blank" rel="noopener noreferrer">
+                      <button 
+                          type='button' 
+                          className='text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white' 
+                          style={{ background: currentColor, borderRadius: '50%' }}>
+                          <AiOutlineGithub />
+                      </button>
+                    </a>
+                </TooltipComponent>
+              </div>
+
+            </div>
+
+            <p className='text-lg ml-8 mb-4'>
+              I consider myself to be well balanced between analytical and creative. I like to use data to not only tell a story but also to map a path moving forward. I'm all for digging into systems and analyzing the efficiencies and whether there can be improvements made. This has been especially true for my long-term hobbies in autocross and fitness/athletics. 
+            </p>
+            <p className='text-lg ml-8'>
+            That said, I can put together a quality frontend design and am used to keeping the end user in mind when it comes to the interface, as well as their experience. I believe a good design doesn't just elevate the project visually but it allows for the smoothest operation by the user.
+            </p>
           </div>
+
+
+
         </div>
       </div>
+    </div>
   )
 }
 
