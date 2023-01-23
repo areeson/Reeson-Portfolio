@@ -1,104 +1,112 @@
 import React from 'react'
-import { Link, } from 'react-router-dom';
-import { GridComponent, ColumnsDirective, ColumnDirective, Resize, Sort, ContextMenu, Filter, Page, ExcelExport, PdfExport, Edit, Inject } from '@syncfusion/ej2-react-grids';
+import { AiOutlineInstagram } from 'react-icons/ai';
+import { } from '../../data/dummy';
+import personal from '../../data/personal.jpg'
+import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
-import { ordersData, contextMenuItems, ordersGrid, projectsBUCardData, projectsPersonalCardData, projectsE36CardData} from '../../data/dummy';
-import { Header } from '../../components';
+import { useStateContext } from '../../contexts/ContextProvider';
 
 
 const Personal = () => {
-  const editing = { allowDeleting: true, allowEditing: true };
+  const { activeMenu, currentColor } = useStateContext();
+
 
   return (
-      <div className='flex flex-col h-full h-94v overflow-y-auto
-      md:-mt-16 md:h-screen
-      '>
+    <div className='flex flex-col h-screen h-94v overflow-y-auto -mt-16 dark:text-gray-100'>
 
-        <div className='bg-white dark:text-gray-100 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl mt-20 z-[1001]'>
-          <Header category="Projects" title="Bellevue University" />
+    {/* Responsive Design for Sidebar adjustment */}
+    <div className={`h-full mt-40 ml-4 mr-4
+        md:mt-24
+        2xl:mt-36
 
-          <div className='rounded-2xl flex h-60 overflow-x-auto scrollbar scrollbar-thumb-purple-50 dark:scrollbar-thumb-gray-700'>
-            <div className='flex gap-5'>
-              {projectsBUCardData.map((item) => (
-                <div key={item.title} className='bg-gray-50 dark:text-gray-200 dark:bg-gray-800 w-80 rounded-2xl h-5/6 hover:drop-shadow-md overflow-y-hidden'>
-                <Link to={`/${item.link}`}>
+      ${ activeMenu
+        ? '2xl:mr-[15rem] 2xl:ml-[10rem] md:ml-4 md:mr-20'
+        : '2xl:mr-[20rem] 2xl:ml-[20rem] md:ml-40 md:mr-40'
+      }
+      `}>
+    {/* ---------------------- */}
 
-                  <div className='w-full h-1/5 bg-gradient-to-r from-purple-300 to-white dark:from-purple-800 dark:to-gray-800 dark:text-gray-300 rounded-2xl flex items-center justify-center' />
+        <div className='flex'>
 
-                  <div className='w-full h-4/5 '>
-                    <p className='text-xl dark:text-gray-100 text-gray-800 m-2'>
-                      {item.title}
-                    </p>
-                    <p className='text-md dark:text-gray-200 text-gray-600 m-2'>
-                      {item.description}
-                    </p>
-                  </div>
+          <div className='w-[40%] flex flex-col items-end z-20
+          md:w-[60%]'>
+            <div className='h-[43%] flex flex-col items-end
+            sm:h-[40%] 
+            md:h-auto'>
+            <p className=' mr-4 mb-2 text-base -ml-[16px] float-right
+                md:ml-8 md:text-3xl md:mb-3 md:mr-4
+                2xl:text-4xl 2xl:ml-8 2xl:mb-10' 
+                style={{ color: currentColor}}>
+                Andrew P. Reeson
+              </p>
 
-                </Link>
+              <div className='bg-black flex justify-center items-center w-[6.5rem] -mr-4 mb-2 z-20
+              2xl:-mr-4 2xl:w-[17rem] 2xl:h-16
+              md:-mr-4 md:w-[11rem] md:h-10 md:mb-5'>
+                <p className='text-white text-lg
+                2xl:text-5xl
+                md:text-3xl'>
+                  PERSONAL
+                </p>
               </div>
-              ))}
+
+              <div className='bg-black flex justify-center items-center w-[8.5rem] -mr-4 mb-36 z-20
+              sm:mb-2
+              2xl:-ml-8 2xl:h-16 2xl:w-[22rem]
+              md:-ml-4 md:h-10 md:w-[15rem]'>
+                <p className='text-white text-lg
+                2xl:text-5xl
+                md:text-3xl'>
+                  BACKGROUND
+                </p>
+              </div>
+
+              <div className='
+              md:flex'>
+
+                <div className='mr-4 mb-6 float-right
+                    2xl:mt-5 2xl:mb-5
+                    md:mt-3 md:mb-3 md:ml-8'>
+                    <TooltipComponent content='Instagram' position='Top' openDelay={1000} closeDelay={1000}>
+                    <a href="https://www.instagram.com/reesonstudio/" target="_blank" rel="noopener noreferrer">
+                        <button 
+                            type='button' 
+                            className='text-2xl p-[.65rem] hover:drop-shadow-xl hover:bg-light-gray text-white
+                              md:text-3xl md:p-3'
+                            style={{ background: currentColor, borderRadius: '50%' }}>
+                            <AiOutlineInstagram />
+                        </button>
+                      </a>
+                  </TooltipComponent>
+                </div>
+
+                </div>
+            </div>
+
+            <div className='w-[270%] -mr-[150%] mt-[30%]
+              sm:-ml-[125%]
+              md:mr-4 md:w-auto md:mt-[5%]
+              lg:ml-0 lg:p-0 lg:w-auto
+              2xl:mt-10%'>
+              <p className='text-base ml-8 mb-4
+              2xl:text-lg'>
+                In my time outside of career path activities, there are a few hobbies I like to pursue. Some of my favorites are seasonal, such as snowboarding in the winter and working on my car late into summer nights. I also enjoy crafting/design, whether that is 3D printing, sticker/htv creations, photography, or woodworking.
+              </p>
+              <p className='text-base ml-8 mb-4
+              2xl:text-lg'>
+                I do my best to get new perspectives outside of my usual day to day by traveling to new locations. Over the years this has been mostly to the North East or South West parts of America, along with a trip out to New Zealand and Australia. My fiance and I are now renovating a camper to get the most out of what there is to see in North America, before making our way onto a sailboat. I'm sure there will be plenty of documentation in a separate string of blogs when the time comes. 
+              </p>
             </div>
           </div>
-        </div>
 
-
-
-        <div className='bg-white dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl h-2/5'>
-          <Header category="Projects" title="Personal" />
-
-          <div className='rounded-2xl flex h-60 overflow-x-auto scrollbar scrollbar-thumb-stone-100 dark:scrollbar-thumb-gray-700'>
-            <div className='flex gap-5'>
-              {projectsPersonalCardData.map((item) => (
-                <div key={item.title} className='bg-gray-50 dark:text-gray-200 dark:bg-gray-800 w-80 rounded-2xl h-5/6 hover:drop-shadow-md overflow-y-hidden'>
-                <Link to={`/${item.link}`}>
-
-                  <div className='w-full h-1/5 bg-gradient-to-r from-yellow-200 to-white dark:from-yellow-800 dark:to-gray-800 dark:text-gray-300 rounded-2xl flex items-center justify-center' />
-
-                  <div className='w-full h-4/5 '>
-                    <p className='text-xl dark:text-gray-100 text-gray-800 m-2'>
-                      {item.title}
-                    </p>
-                    <p className='text-md dark:text-gray-200 text-gray-600 m-2'>
-                      {item.description}
-                    </p>
-                  </div>
-
-                </Link>
-              </div>
-              ))}
+          <div className='w-[60%] z-10
+          md:w-[40%]'>
+              <img src={personal} className='rounded-lg' alt='Professional Headshot of Andrew Reeson'/>
             </div>
-          </div>
-        </div>
 
-
-
-        <div className='bg-white dark:text-gray-100 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl h-2/5'>
-          <Header category="Projects" title="E36 " />
-
-          <div className='rounded-2xl flex h-60 overflow-x-auto scrollbar scrollbar-thumb-stone-100 dark:scrollbar-thumb-gray-700'>
-            <div className='flex gap-5'>
-              {projectsE36CardData.map((item) => (
-                <div key={item.title} className='bg-gray-50 dark:text-gray-100 dark:bg-gray-800 w-80 rounded-2xl h-5/6 hover:drop-shadow-md overflow-y-hidden'>
-                <Link to={`/${item.link}`}>
-
-                  <div className='w-full h-1/5 bg-gradient-to-r from-sky-400 to-white dark:from-sky-800 dark:to-gray-800 dark:text-gray-300 rounded-2xl flex items-center justify-center' />
-
-                  <div className='w-full h-4/5 '>
-                    <p className='text-xl dark:text-gray-100 text-gray-800 m-2'>
-                      {item.title}
-                    </p>
-                    <p className='text-md dark:text-gray-200 text-gray-600 m-2'>
-                      {item.description}
-                    </p>
-                  </div>
-
-                </Link>
-              </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
+    </div>
   )
 }
 
