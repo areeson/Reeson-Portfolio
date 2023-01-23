@@ -47,7 +47,6 @@ const Sidebar = () => {
                 <NavLink
                   to={`/${link.name}`}
                   key={link.name}
-                  onClick={handleActiveMenu}
 
                   style={({ isActive }) => ({
                     backgroundColor: isActive ? currentColor: ''
