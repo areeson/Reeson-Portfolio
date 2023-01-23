@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineMail}  from 'react-icons/ai';
+import { AiOutlineMail, AiFillLinkedin, AiOutlineGithub, AiOutlineInstagram }  from 'react-icons/ai';
 import { FiSettings } from 'react-icons/fi';
 import { RiTodoLine } from 'react-icons/ri';
 import { MdOutlineSchool } from 'react-icons/md';
@@ -38,6 +38,30 @@ export const links = [
       {
         name: 'Blog',
         icon: <HiOutlinePencil />,
+      },
+    ],
+  },
+
+];
+
+export const socialLinks = [
+  {
+    title: 'SOCIAL',
+    links: [
+      {
+        name: 'LinkedIn',
+        icon: <AiFillLinkedin />,
+        link: 'https://www.linkedin.com/in/andrewreeson/'
+      },
+      {
+        name: 'GitHub',
+        icon: <AiOutlineGithub />,
+        link: 'https://github.com/areeson'
+      },
+      {
+        name: 'Instagram',
+        icon: <AiOutlineInstagram />,
+        link: 'https://www.instagram.com/reesonstudio/'
       },
     ],
   },

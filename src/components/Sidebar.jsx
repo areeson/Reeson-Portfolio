@@ -4,7 +4,7 @@ import { SiShopware } from 'react-icons/si';
 import { MdOutlineCancel } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
-import { links, Links }  from '../data/dummy';
+import { links, socialLinks }  from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
 const Sidebar = () => {
@@ -64,6 +64,39 @@ const Sidebar = () => {
             </div>
           ))}
         </div>
+
+        <div className='mt-10'>
+          {socialLinks.map((item) => (
+            <div key={item.title}> 
+              <p className="text-gray-400 m-3 mt-4 uppercase">
+                {item.title}
+              </p>
+
+              <div className='flex justify-center mr-3 gap-8'>
+              {item.links.map((link) => (
+                
+                <div>
+                <NavLink
+                  to={`/${link.name}`}
+                  key={link.name}
+
+                  style={{ background: currentColor, borderRadius: '50%' }}
+
+                  target="_blank"
+
+                  className='p-[.65rem] flex justify-center text-2xl hover:drop-shadow-xl hover:bg-light-gray'
+                  >
+                    {link.icon}
+                  </NavLink>
+                </div>
+
+              ))}
+              </div>
+
+            </div>
+          ))}
+        </div>
+        
       </>)}
     </div>
   )
