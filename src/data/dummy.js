@@ -25,7 +25,7 @@ export const links = [
   },
 
   {
-    title: 'Main',
+    title: 'NAV',
     links: [
       {
         name: 'Projects',
