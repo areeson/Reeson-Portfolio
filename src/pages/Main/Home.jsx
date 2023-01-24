@@ -1,19 +1,12 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom';
-import {BsCurrencyDollar } from 'react-icons/bs';
-import { GoPrimitiveDot } from 'react-icons/go';
-import { Stacked, Pie, Button, SparkLine } from '../../components';
-import { homeCardData, SparklineAreaData, ecomPieChartData } from '../../data/dummy';
+import { Link } from 'react-router-dom';
+import {  Button } from '../../components';
+import { homeCardData } from '../../data/dummy';
 import { useStateContext } from '../../contexts/ContextProvider';
-import { GridComponent, ColumnsDirective, ColumnDirective, Resize, Sort, ContextMenu, Filter, Page, ExcelExport, PdfExport, Edit, Inject } from '@syncfusion/ej2-react-grids';
-
-import { ordersData, contextMenuItems, ordersGrid } from '../../data/dummy';
-import { Header } from '../../components';
 
 
 const Home = () => {
   const { currentColor } = useStateContext();
-  const editing = { allowDeleting: true, allowEditing: true };
 
   return (
     <div className="">

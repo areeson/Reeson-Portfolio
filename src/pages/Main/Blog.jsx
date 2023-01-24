@@ -1,13 +1,11 @@
 import React from 'react'
 import { Link, } from 'react-router-dom';
-import { GridComponent, ColumnsDirective, ColumnDirective, Resize, Sort, ContextMenu, Filter, Page, ExcelExport, PdfExport, Edit, Inject } from '@syncfusion/ej2-react-grids';
 
-import { ordersData, contextMenuItems, ordersGrid, projectsBUCardData, projectsPersonalCardData, projectsE36CardData} from '../../data/dummy';
+import { projectsBUCardData, projectsPersonalCardData, projectsE36CardData} from '../../data/dummy';
 import { Header } from '../../components';
 
 
 const Blog = () => {
-  const editing = { allowDeleting: true, allowEditing: true };
 
   return (
       <div className='flex flex-col h-screen h-94v overflow-y-auto -mt-16'>
