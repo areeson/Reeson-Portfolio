@@ -15,7 +15,7 @@ const Projects = () => {
         <div className='bg-white dark:text-gray-100 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl mt-20 z-[1001]'>
           <Header category="Projects" title="Bellevue University" />
 
-          <div className='rounded-2xl flex h-60 overflow-x-auto scrollbar scrollbar-thumb-purple-50 dark:scrollbar-thumb-gray-700'>
+          <div className='rounded-2xl flex h-52 overflow-x-auto scrollbar-thin scrollbar-thumb-purple-50 hover:scrollbar-thumb-purple-100 dark:scrollbar-thumb-gray-700'>
             <div className='flex gap-5'>
               {projectsBUCardData.map((item) => (
                 <div key={item.title} className='bg-gray-50 dark:text-gray-200 dark:bg-gray-800 w-80 rounded-2xl h-5/6 hover:drop-shadow-md overflow-y-hidden'>
@@ -44,7 +44,7 @@ const Projects = () => {
         <div className='bg-white dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl h-2/5'>
           <Header category="Projects" title="Personal" />
 
-          <div className='rounded-2xl flex h-60 overflow-x-auto scrollbar scrollbar-thumb-yellow-100 dark:scrollbar-thumb-gray-700'>
+          <div className='rounded-2xl flex h-52 overflow-x-auto scrollbar-thin scrollbar-thumb-yellow-100 hover:scrollbar-thumb-yellow-100 dark:scrollbar-thumb-gray-700 break-words z-[1001]'>
             <div className='flex gap-5'>
               {projectsPersonalCardData.map((item) => (
                 <div key={item.title} className='bg-gray-50 dark:text-gray-200 dark:bg-gray-800 w-80 rounded-2xl h-5/6 hover:drop-shadow-md overflow-y-hidden'>
@@ -73,7 +73,7 @@ const Projects = () => {
         <div className='bg-white dark:text-gray-100 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl h-2/5'>
           <Header category="Projects" title="E36 " />
 
-          <div className='rounded-2xl flex h-60 overflow-x-auto scrollbar scrollbar-thumb-stone-100 dark:scrollbar-thumb-gray-700'>
+          <div className='rounded-2xl flex h-52 overflow-x-auto scrollbar-thin scrollbar-thumb-sky-50 hover:scrollbar-thumb-sky-100 dark:scrollbar-thumb-gray-700 break-words z-[1001]'>
             <div className='flex gap-5'>
               {projectsE36CardData.map((item) => (
                 <div key={item.title} className='bg-gray-50 dark:text-gray-100 dark:bg-gray-800 w-80 rounded-2xl h-5/6 hover:drop-shadow-md overflow-y-hidden'>

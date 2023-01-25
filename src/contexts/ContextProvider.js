@@ -22,7 +22,6 @@ export const ContextProvider = ({ children }) => {
 
         localStorage.setItem('themeMode', e.target.value);
 
-        setThemeSettings(false);
     }
 
     const setColor = (color) => {

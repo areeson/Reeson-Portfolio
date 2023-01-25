@@ -32,7 +32,7 @@ const Education = () => {
             </div>
           </div>
 
-          <div className='rounded-2xl h-64 overflow-x-auto scrollbar-thin scrollbar-thumb-purple-50 dark:scrollbar-thumb-purple-800 w-[102%] lg:w-full'>
+          <div className='rounded-2xl h-64 overflow-x-auto scrollbar-thin scrollbar-thumb-purple-50 dark:scrollbar-thumb-purple-800 w-[102%] lg:w-full break-words z-[1001]'>
 
     <div className='lg:flex gap-3'>
       {classesBUCardData1.map((item) => (
@@ -80,7 +80,7 @@ const Education = () => {
 </div>
 
 
-        <div className='bg-white dark:text-gray-100 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl 2xl:h-44 lg:h-48'>
+        <div className='bg-white dark:text-gray-100 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl 2xl:h-44 lg:h-48 z-[1001]'>
           <Header category="Side-Quests" title="Certifications " />
 
           <div className='rounded-2xl lg:h-48 h-32 overflow-x-auto scrollbar-thin scrollbar-thumb-emerald-50 dark:scrollbar-thumb-emerald-800 w-[102%] lg:w-full'>
@@ -109,7 +109,7 @@ const Education = () => {
         </div>
 
 
-        <div className='bg-white dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl 2xl:h-[37rem] lg:h-[40rem] h-[54rem]'>
+        <div className='bg-white dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl 2xl:h-[37rem] lg:h-[40rem] h-[54rem] z-[1001]'>
 
         <div className='mb-5 lg:mb-0 lg:flex'>
           <Header category="Classes" title="University of Nebraska-Lincoln" />
@@ -129,7 +129,7 @@ const Education = () => {
           </div>
         </div>
 
-          <div className='rounded-2xl 2xl:h-[28rem] lg:h-[33rem] h-[29rem] overflow-x-auto scrollbar-thin scrollbar-thumb-rose-50 dark:scrollbar-thumb-rose-800 w-[102%] lg:w-full'>
+          <div className='rounded-2xl 2xl:h-[28rem] lg:h-[33rem] h-[29rem] overflow-x-auto scrollbar-thin scrollbar-thumb-rose-50 dark:scrollbar-thumb-rose-800 w-[102%] lg:w-full break-words'>
 
             <div className='lg:flex gap-3'>
               {classesUNLCardData1.map((item) => (
@@ -218,10 +218,10 @@ const Education = () => {
           </div>
         </div>
 
-        <div className='bg-white dark:text-gray-100 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl lg:h-44 h-60'>
+        <div className='bg-white dark:text-gray-100 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl lg:h-44 h-60 z-[1001]'>
           <Header category="Community" title="Volunteering" />
 
-          <div className='rounded-2xl h-48 overflow-x-auto scrollbar-thin scrollbar-thumb-blue-50 dark:scrollbar-thumb-blue-700 w-[102%] lg:w-full'>
+          <div className='rounded-2xl h-48 overflow-x-auto scrollbar-thin scrollbar-thumb-blue-50 dark:scrollbar-thumb-blue-700 w-[102%] lg:w-full break-words'>
 
             <div className='lg:flex gap-3'>
               {volunteeringCardData1.map((item) => (

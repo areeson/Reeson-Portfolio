@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom';
-import { SiShopware } from 'react-icons/si';
+import { MdOutlineBuildCircle } from 'react-icons/md';
 import { MdOutlineCancel } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
@@ -9,7 +9,7 @@ import { useStateContext } from '../contexts/ContextProvider';
 
 const Sidebar = () => {
   const { activeMenu, setActiveMenu, screenSize, currentColor } = useStateContext();
-
+// eslint-disable-next-line
   const handleActiveMenu = () => setActiveMenu(!activeMenu);
 
   const handleCloseSideBar = () => {
@@ -26,7 +26,7 @@ const Sidebar = () => {
         <>
           <div className="flex justify-between items-center">
           <Link to='/' onClick={handleCloseSideBar} className='items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900'>
-            <SiShopware /> <span>Andrew P. Reeson</span>
+            <MdOutlineBuildCircle className='text-3xl'/> <span>Andrew P. Reeson</span>
           </Link>
           <TooltipComponent content='Menu' position='BottomCenter'>
             <button type="button"
@@ -51,7 +51,7 @@ const Sidebar = () => {
                   style={({ isActive }) => ({
                     backgroundColor: isActive ? currentColor: ''
                   })}
-
+                  
                   className={({isActive}) => 
                   isActive ? activeLink : normalLink}
                   >
@@ -84,7 +84,7 @@ const Sidebar = () => {
 
                   target="_blank"
 
-                  className='p-[.65rem] flex justify-center text-2xl hover:drop-shadow-xl hover:bg-light-gray'
+                  className='p-[.65rem] flex justify-center text-2xl hover:drop-shadow-xl hover:bg-light-gray text-white'
                   >
                     {link.icon}
                   </NavLink>

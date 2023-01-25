@@ -142,17 +142,18 @@ export const chatData = [
 export const homeCardData = [
   {
     title: 'Professional Background',
-    description: 'My Background',
-    link: 'Professional'
+    description: 'A mixture between analytical and creative. Keeping efficiency and logic in mind without forgetting the target user experience. A summary of work done to build up my resume.',
+    link: 'Professional',
+    bend: 'hover:skew-x-2'
   },
   {
     title: 'Blog',
-    description: 'Card link to Blog page',
+    description: 'Checkout the articles I write to document some of the important areas in my life. From technical topics to experiences in new cultures and environments.',
     link: 'blog'
   },
   {
     title: 'Personal Background',
-    description: 'Outdoorsy shit',
+    description: 'Hear more about the hobbies and activities I like to dig into in the after hours. These are activities that have shaped my character and helped build balance in life.',
     link: 'Personal'
   }
 ];
@@ -407,27 +408,27 @@ export const volunteeringCardData1 = [
 export const themeColors = [
   {
     name: 'blue-theme',
-    color: '#38bdf8',
+    color: '#0ea5e9',
   },
   {
-    name: 'green-theme',
-    color: '#22d3ee',
+    name: 'Cyan-theme',
+    color: '#06b6d4',
   },
   {
     name: 'purple-theme',
-    color: '#c084fc',
+    color: '#8b5cf6',
   },
   {
     name: 'red-theme',
-    color: '#fb7185',
+    color: '#f43f5e',
   },
   {
     name: 'indigo-theme',
-    color: '#818cf8',
+    color: '#6366f1',
   },
   {
     name: 'orange-theme',
-    color: '#fb923c',
+    color: '#f59e0b',
   },
 ];
 
