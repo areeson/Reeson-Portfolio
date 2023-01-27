@@ -144,7 +144,6 @@ export const homeCardData = [
     title: 'Professional Background',
     description: 'A mixture between analytical and creative. Keeping efficiency and logic in mind without forgetting the target user experience. A summary of work done to build up my resume.',
     link: 'Professional',
-    bend: 'hover:skew-x-2'
   },
   {
     title: 'Resume',
