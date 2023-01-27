@@ -4,7 +4,7 @@ import { MdOutlineBrightnessMedium } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Sidebar, ThemeSettings } from './components';
-import { Home, Projects, Proviso, Blog, Education, Professional, Personal } from './pages';
+import { Home, Projects, Proviso, Resume, Education, Professional, Personal } from './pages';
 
 import { useStateContext } from './contexts/ContextProvider';
 
@@ -58,7 +58,7 @@ const App = () => {
                         <Route path="/home" element={(<Home />)} />
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/education" element={<Education />} />
-                        <Route path="/blog" element={<Blog />} />
+                        <Route path="/resume" element={<Resume />} />
                         <Route path="/professional" element={<Professional />} />
                         <Route path="/personal" element={<Personal />} />
 

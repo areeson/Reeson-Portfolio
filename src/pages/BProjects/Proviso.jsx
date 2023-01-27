@@ -35,7 +35,7 @@ const Proviso = () => {
               <p className="text-lg -mb-2 flex items-center
               md:text-xl
               ">
-                <img src={headshot} className='rounded-full w-12 h-12 mr-3' /> Andrew Reeson, Developer
+                <img src={headshot} alt='Andrew Reeson headshot' className='rounded-full w-12 h-12 mr-3' /> Andrew Reeson, Developer
               </p>
               <p className="text-lg mb-1
               md:text-xl
@@ -64,7 +64,7 @@ const Proviso = () => {
               </p>
             </div>
             <div class="aspect-w-16 aspect-h-9">
-              <iframe src="https://www.youtube.com/embed/c0A9hNNsCmk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              <iframe src="https://www.youtube.com/embed/c0A9hNNsCmk" title='Proviso Website Tour' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
             <div className='mt-10'>
               <p className='text-lg mb-10'>
@@ -127,7 +127,7 @@ const Proviso = () => {
                 Database Tables:
               </p>
               <div className='mb-10'>
-                <img src={provisotables} className='h-56 w-56 mr-3' />
+                <img src={provisotables} alt='MySQL Tables from Proviso project' className='h-56 w-56 mr-3' />
               </div>
               <p className='text-2xl mb-6
               md:text-3xl
@@ -144,7 +144,7 @@ const Proviso = () => {
                 Quick Look at The Backend:
               </p>
               <div class="aspect-w-16 aspect-h-9 mb-10">
-                <iframe src="https://www.youtube.com/embed/Zpum9A_SfFU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe src="https://www.youtube.com/embed/Zpum9A_SfFU" title='Backend Tour' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
             <p className='text-2xl mb-6
               md:text-3xl
