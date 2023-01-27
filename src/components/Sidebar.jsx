@@ -84,7 +84,7 @@ const Sidebar = () => {
 
                   target="_blank"
 
-                  className='p-[.65rem] flex justify-center text-2xl hover:drop-shadow-xl hover:bg-light-gray text-white'
+                  className='p-[.65rem] flex justify-center text-2xl hover:drop-shadow-xl hover:bg-light-gray text-white hover:translate-x-1'
                   >
                     {link.icon}
                   </NavLink>

@@ -6,7 +6,7 @@ import { useStateContext } from '../../contexts/ContextProvider';
 
 
 const Home = () => {
-  const { currentColor, activeMenu } = useStateContext();
+  const { activeMenu, setActiveMenu, currentColor } = useStateContext();
 
   return (
     <div className="">
@@ -36,7 +36,7 @@ const Home = () => {
                   Lace up your boots, there's some adventuring to be done.
                 </p>
 
-                <Link to="/Projects" className='hover:translate-x-1'>
+                <Link to="/Projects" className='hover:translate-x-1' onClick={() => setActiveMenu(( prevActiveMenu ) => ! prevActiveMenu )}>
                   <Button color='white' bgColor={currentColor} borderRadius='50px'
                     text='Projects'
                     size='lg'
@@ -52,8 +52,9 @@ const Home = () => {
         '>
           {homeCardData.map((item) => (
             <div
+              onClick={() => setActiveMenu(( prevActiveMenu ) => ! prevActiveMenu )}
               key={item.title} 
-              className={`bg-white dark:text-gray-200 dark:bg-secondary-dark-bg w-full mb-5 rounded-2xl h-1/3 hover:drop-shadow-xl hover:skew-x-2
+              className={`bg-white dark:text-gray-200 dark:bg-secondary-dark-bg w-full mb-5 rounded-2xl h-1/3 hover:drop-shadow-xl hover:skew-x-1
               lg:h-2/3 lg:mb-0
 
               ${ activeMenu
@@ -64,22 +65,26 @@ const Home = () => {
 
             <Link to={`/${item.link}`}>
               <div className='w-full h-1/5 bg-gradient-to-r from-cyan-100 to-yellow-100 dark:from-cyan-700 dark:to-violet-900 dark:text-gray-300 rounded-2xl flex items-center justify-center
-              lg:h-1/4
+              md:h-[15%]
+              2xl:h-1/5
               '>
+              
               </div>
 
               <div className='w-full h-4/5 
               lg:h-2/3
               '>
 
-                <p className='text-xl dark:text-gray-100 text-gray-800 ml-6 mt-2.5
-                lg:mt-8 lg:ml-6 lg:mr-6
+                <p className='text-xl dark:text-gray-100 text-gray-800 ml-6 mt-2.5 mr-6
+                md:mt-2
+                2xl:mt-8
                 '>
                   {item.title}
                 </p>
 
-                <p className='text-md dark:text-gray-200 text-gray-600 ml-6 mt-1.5
-                lg:ml-6 lg:mt-5 lg:mr-6
+                <p className='text-md dark:text-gray-200 text-gray-600 ml-6 mt-1.5 mr-6
+                md:mt-3
+                2xl:mt-5
                 '>
                   {item.description}
                 </p>

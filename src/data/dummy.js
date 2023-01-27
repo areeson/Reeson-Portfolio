@@ -36,7 +36,7 @@ export const links = [
         icon: <MdOutlineSchool />,
       },
       {
-        name: 'Blog',
+        name: 'Resume',
         icon: <HiOutlinePencil />,
       },
     ],
@@ -147,9 +147,9 @@ export const homeCardData = [
     bend: 'hover:skew-x-2'
   },
   {
-    title: 'Blog',
-    description: 'Checkout the articles I write to document some of the important areas in my life. From technical topics to experiences in new cultures and environments.',
-    link: 'blog'
+    title: 'Resume',
+    description: 'Checkout the breakdown on some of my past experiences and projects that have led me to today.',
+    link: 'resume'
   },
   {
     title: 'Personal Background',
@@ -159,6 +159,11 @@ export const homeCardData = [
 ];
 
 export const projectsPersonalCardData = [
+  {
+    title: 'Portfolio Website',
+    description: 'A more in depth look at what went on during the build of this current site.',
+    link: 'Projects'
+  },
   {
     title: 'Weather API Dash',
     description: 'Get an in depth look on the weather in your area. Collecting project for presentation, coming soon!',
