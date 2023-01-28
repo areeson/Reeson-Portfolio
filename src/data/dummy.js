@@ -220,54 +220,54 @@ export const projectsBUCardData = [
 export const classesBUCardData1 = [
   {
     title: 'Foundation of Software Development',
-    // link: 'Education',
+    link: 'buc1',
   },
   {
     title: 'Intro to Programming with Python',
-    // link: 'Education',
+    link: 'buc2',
   },
   {
     title: 'Database Development and Use',
-    // link: 'Education',
+    link: 'buc3',
   },
   {
     title: 'Programming with Java',
-    // link: 'Education',
+    link: 'buc4',
   },
   {
     title: 'Web Development with HTML & CSS',
-    // link: 'Education',
+    link: 'buc5',
   },
   {
     title: 'Intermediate Java Programming',
-    // link: 'Education',
+    link: 'buc6',
   }
 ]
 
 export const classesBUCardData2 = [
   {
     title: 'Secure Software Development',
-    // link: 'Education',
+    link: 'buc7',
   },
   {
     title: 'Advanced Java Programming',
-    // link: 'Education',
+    link: 'buc8',
   },
   {
     title: 'DevOps',
-    // link: 'Education',
+    link: 'buc9',
   },
   {
     title: 'Server Side Development (JavaScript)',
-    // link: 'Education',
+    link: 'buc10',
   },
   {
     title: 'Server-Side Scripting (PHP)',
-    // link: 'Education',
+    link: 'buc11',
   },
   {
     title: 'Capstone in Software Development',
-    // link: 'Education',
+    link: 'buc12',
   },
 ];
 

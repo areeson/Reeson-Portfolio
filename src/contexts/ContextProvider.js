@@ -7,6 +7,7 @@ const initialState = {
     cart: false,
     userProfile: false,
     notification: false,
+    buc1: false,
 };
 
 export const ContextProvider = ({ children }) => {
@@ -16,6 +17,7 @@ export const ContextProvider = ({ children }) => {
     const [currentColor, setCurrentColor] = useState('#03C9D7');
     const [currentMode, setCurrentMode] = useState('Light');
     const [themeSettings, setThemeSettings] = useState(false);
+    const [BUC1, setBUC1] = useState(false);
 
     const setMode = (e) => {
         setCurrentMode(e.target.value);
@@ -38,15 +40,14 @@ export const ContextProvider = ({ children }) => {
     return (
         <StateContext.Provider
             value={{
-                activeMenu, 
-                setActiveMenu,
-                isClicked, 
-                setIsClicked, 
+                activeMenu, setActiveMenu,
+                isClicked, setIsClicked, 
                 handleClick,
                 screenSize, setScreenSize,
-                currentColor, currentMode,
+                currentMode, setMode,
+                currentColor, setColor,
                 themeSettings, setThemeSettings,
-                setMode, setColor
+                BUC1, setBUC1
             }}
         >
             {children}
