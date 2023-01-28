@@ -175,14 +175,14 @@ export const projectsPersonalCardData = [
   },
 ];
 
-export const projectsE36CardData = [
-  {
-    title: 'In Progress',
-    description: 'Check back for track car progress posts',
-    link: 'Projects'
-  },
+// export const projectsE36CardData = [
+//   {
+//     title: 'In Progress',
+//     description: 'Check back for track car progress posts',
+//     link: 'Projects'
+//   },
 
-];
+// ];
 
 export const projectsBUCardData = [
   {
