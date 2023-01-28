@@ -9,7 +9,7 @@ import { Header } from '../../components';
 const Projects = () => {
 
   return (
-      <div className='flex flex-col h-[94vh] overflow-y-auto mt-16
+      <div className='flex flex-col h-[98vh] overflow-y-auto mt-16
       md:h-[91vh] md:mt-0
       2xl:h-[94vh]
       '>

@@ -13,23 +13,24 @@ const Professional = () => {
 
 
   return (
-    <div className='flex flex-col h-screen h-94v overflow-y-auto -mt-16 dark:text-gray-100'>
+    <div className='flex flex-col h-[106vh] overflow-y-auto -mt-16 dark:text-gray-100
+    md:h-screen'>
 
     {/* Responsive Design for Sidebar adjustment */}
-      <div className={`h-full mt-40 ml-4 mr-4
+      <div className={`h-full mt-44 ml-4 mr-4
         md:mt-28
         2xl:mt-36
 
       ${ activeMenu
-        ? '2xl:mr-[15rem] 2xl:ml-[10rem] md:ml-4 md:mr-20'
+        ? '2xl:mr-[15rem] 2xl:ml-[10rem] md:ml-12 md:mr-12'
         : '2xl:mr-[20rem] 2xl:ml-[20rem] md:ml-40 md:mr-40'
       }
       `}>
     {/* ---------------------- */}
 
         <Link to='/Personal'>
-          <div className='flex float-right -mt-8 items-center
-              md:'>
+          <div className='flex float-right -mt-12 items-center text-sm text-gray-400
+              md:text-base md:text-black'>
             <p className='px-4'>
               Personal background
             </p>
@@ -69,7 +70,7 @@ const Professional = () => {
                 </p>
               </div>
 
-              <div className='bg-black flex justify-center items-center w-[8.5rem] -ml-4 mb-20
+              <div className='bg-black flex justify-center items-center w-[8.5rem] -ml-4 mb-6
               sm:mb-2
               2xl:-ml-8 2xl:h-16 2xl:w-[22rem]
               md:-ml-8 md:h-10 md:w-[15rem]'>
@@ -99,7 +100,7 @@ const Professional = () => {
                   </TooltipComponent>
                 </div>
 
-                <div className='ml-4
+                <div className='ml-4 mb-6
                   2xl:mt-5 2xl:mb-5
                   md:mt-3 md:mb-3 md:ml-8'>
                     <TooltipComponent content='GitHub' position='Top' openDelay={1000} closeDelay={1000}>
@@ -134,7 +135,7 @@ const Professional = () => {
               </div>
             </div>
 
-            <div className='mt-[20%] w-[280%] -ml-[180%] pt-1/5 pr-[10%] pl-[10%] pb-[10%]
+            <div className='mt-[15%] w-[280%] -ml-[180%] pt-1/5 pr-[10%] pl-[10%] pb-[10%]
               sm:-ml-[125%]
               lg:ml-0 lg:p-0 lg:w-auto lg:mt-0'>
               <p className='text-base ml-8 mb-4

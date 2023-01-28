@@ -8,7 +8,7 @@ import { Header } from '../../components';
 const Education = () => {
 
   return (
-      <div className='flex flex-col h-[94vh] overflow-y-auto
+      <div className='flex flex-col h-[98vh] overflow-y-auto
       md:-mt-16 md:h-screen
       '>
       

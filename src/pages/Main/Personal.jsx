@@ -14,10 +14,11 @@ const Personal = () => {
 
 
   return (
-    <div className='flex flex-col h-screen h-94v overflow-y-auto -mt-16 dark:text-gray-100'>
+    <div className='flex flex-col h-[106vh] overflow-y-auto -mt-16 dark:text-gray-100
+    md:h-screen'>
 
     {/* Responsive Design for Sidebar adjustment */}
-    <div className={`h-full mt-40 ml-4 mr-4
+    <div className={`h-full mt-44 ml-4 mr-4
         md:mt-28
         2xl:mt-36
 
@@ -29,7 +30,7 @@ const Personal = () => {
     {/* ---------------------- */}
 
         <Link to='/Professional'>
-            <div className='flex -mt-8 items-center'>
+            <div className='flex -mt-12 mb-4 items-center text-sm text-gray-400'>
               <div className='text-2xl px-2 py-1 animate-pulse rounded-full bg-stone-200 dark:text-white dark:bg-stone-700'>
                 <BsArrowLeft />
               </div>
