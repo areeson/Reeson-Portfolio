@@ -65,35 +65,6 @@ const Blog = () => {
             </div>
           </div>
         </div>
-
-
-
-        <div className='bg-white dark:text-gray-100 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl h-2/5'>
-          <Header category="Projects" title="E36 " />
-
-          <div className='rounded-2xl flex h-60 overflow-x-auto scrollbar scrollbar-thumb-stone-100 dark:scrollbar-thumb-gray-700'>
-            <div className='flex gap-5'>
-              {projectsE36CardData.map((item) => (
-                <div key={item.title} className='bg-gray-50 dark:text-gray-100 dark:bg-gray-800 w-80 rounded-2xl h-5/6 hover:drop-shadow-md overflow-y-hidden'>
-                <Link to={`/${item.link}`}>
-
-                  <div className='w-full h-1/5 bg-gradient-to-r from-sky-400 to-white dark:from-sky-800 dark:to-gray-800 dark:text-gray-300 rounded-2xl flex items-center justify-center' />
-
-                  <div className='w-full h-4/5 '>
-                    <p className='text-xl dark:text-gray-100 text-gray-800 m-2'>
-                      {item.title}
-                    </p>
-                    <p className='text-md dark:text-gray-200 text-gray-600 m-2'>
-                      {item.description}
-                    </p>
-                  </div>
-
-                </Link>
-              </div>
-              ))}
-            </div>
-          </div>
-        </div>
       </div>
   )
 }
