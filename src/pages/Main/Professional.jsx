@@ -1,5 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
+import { BsArrowRight } from 'react-icons/bs';
+import { HiOutlineDocumentText } from 'react-icons/hi';
 import professional from '../../data/professional.jpg'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
@@ -14,28 +17,41 @@ const Professional = () => {
 
     {/* Responsive Design for Sidebar adjustment */}
       <div className={`h-full mt-40 ml-4 mr-4
-        md:mt-24
+        md:mt-28
         2xl:mt-36
 
       ${ activeMenu
-        ? '2xl:mr-[20rem] 2xl:ml-[20rem] md:ml-28 md:mr-28'
-        : '2xl:mr-[30rem] 2xl:ml-[30rem] md:ml-64 md:mr-64'
+        ? '2xl:mr-[15rem] 2xl:ml-[10rem] md:ml-4 md:mr-20'
+        : '2xl:mr-[20rem] 2xl:ml-[20rem] md:ml-40 md:mr-40'
       }
       `}>
     {/* ---------------------- */}
 
+        <Link to='/Personal'>
+          <div className='flex float-right -mt-8 items-center
+              md:'>
+            <p className='px-4'>
+              Personal background
+            </p>
+            <div className='text-2xl px-2 py-1 animate-pulse rounded-full bg-stone-200 dark:text-white dark:bg-stone-700'>
+              <BsArrowRight />
+            </div>
+          </div>
+        </Link>
+
         <div className='flex'>
 
           <div className='w-[60%]
-          md:w-1/2'>
+          md:w-[40%]'>
             <img src={professional} className='rounded-lg' alt='Professional Headshot of Andrew Reeson'/>
           </div>
 
           <div className='w-[40%]
-          md:w-1/2'>
+          md:w-[60%]'>
             <div className='h-[43%] 
             sm:h-[40%] 
             md:h-auto'>
+
               <p className=' ml-4 mb-2 text-base -mr-[16px]
                 md:ml-8 md:text-3xl md:mb-3 md:mr-auto
                 2xl:text-4xl 2xl:ml-8 2xl:mb-10' 
@@ -94,6 +110,22 @@ const Professional = () => {
                             md:text-3xl md:p-3' 
                             style={{ background: currentColor, borderRadius: '50%' }}>
                             <AiOutlineGithub />
+                        </button>
+                      </a>
+                  </TooltipComponent>
+                </div>
+
+                <div className='ml-4
+                  2xl:mt-5 2xl:mb-5
+                  md:mt-3 md:mb-3 md:ml-8'>
+                    <TooltipComponent content='Resume' position='Top' openDelay={1000} closeDelay={1000}>
+                    <a href="/resume" target="_blank" rel="noopener noreferrer">
+                        <button 
+                            type='button' 
+                            className='text-2xl p-[.65rem] hover:drop-shadow-xl hover:bg-light-gray text-white
+                            md:text-3xl md:p-3' 
+                            style={{ background: currentColor, borderRadius: '50%' }}>
+                            <HiOutlineDocumentText />
                         </button>
                       </a>
                   </TooltipComponent>
