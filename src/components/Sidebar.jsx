@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom';
-import { MdOutlineBuildCircle } from 'react-icons/md';
-import { MdOutlineCancel } from 'react-icons/md';
+import { MdOutlineBuildCircle, MdOutlineCancel } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { links, socialLinks }  from '../data/dummy';
@@ -76,18 +75,17 @@ const Sidebar = () => {
               {item.links.map((link) => (
                 
                 <div>
-                <NavLink
-                  to={`/${link.name}`}
-                  key={link.name}
-
-                  style={{ background: currentColor, borderRadius: '50%' }}
-
-                  target="_blank"
-
-                  className='p-[.65rem] flex justify-center text-2xl hover:drop-shadow-xl hover:bg-light-gray text-white hover:translate-x-1'
-                  >
-                    {link.icon}
-                  </NavLink>
+                <TooltipComponent content={`${link.name}`} position='Top' openDelay={1000} closeDelay={1000}>
+                    <a href={`${link.link}`} target="_blank" rel="noopener noreferrer">
+                        <button 
+                            type='button' 
+                            className='text-2xl p-[.65rem] hover:drop-shadow-xl hover:bg-light-gray text-white hover:translate-x-0.5
+                              md:text-3xl'
+                            style={{ background: currentColor, borderRadius: '50%' }}>
+                            {link.icon}
+                        </button>
+                      </a>
+                  </TooltipComponent>
                 </div>
 
               ))}

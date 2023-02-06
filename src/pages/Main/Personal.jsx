@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import { BsArrowLeft } from 'react-icons/bs';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { } from '../../data/dummy';
 import personal from '../../data/personal.jpg'
@@ -12,11 +14,12 @@ const Personal = () => {
 
 
   return (
-    <div className='flex flex-col h-screen h-94v overflow-y-auto -mt-16 dark:text-gray-100'>
+    <div className='flex flex-col h-[106vh] overflow-y-auto -mt-16 dark:text-gray-100
+    md:h-screen'>
 
     {/* Responsive Design for Sidebar adjustment */}
-    <div className={`h-full mt-40 ml-4 mr-4
-        md:mt-24
+    <div className={`h-full mt-44 ml-4 mr-4
+        md:mt-28
         2xl:mt-36
 
       ${ activeMenu
@@ -26,10 +29,22 @@ const Personal = () => {
       `}>
     {/* ---------------------- */}
 
+        <Link to='/Professional'>
+            <div className='flex -mt-12 mb-4 items-center text-sm text-gray-400'>
+              <div className='text-2xl px-2 py-1 animate-pulse rounded-full bg-stone-200 dark:text-white dark:bg-stone-700'>
+                <BsArrowLeft />
+              </div>
+              <p className='px-4'>
+                Professional background
+              </p>
+            </div>
+          </Link>
+
         <div className='flex'>
 
           <div className='w-[40%] flex flex-col items-end z-20
           md:w-[60%]'>
+
             <div className='h-[43%] flex flex-col items-end
             sm:h-[40%] 
             md:h-auto'>
@@ -85,7 +100,7 @@ const Personal = () => {
 
             <div className='w-[270%] -mr-[150%] mt-[30%]
               sm:-ml-[125%]
-              md:mr-4 md:w-auto md:mt-[5%]
+              md:mr-4 md:w-auto md:mt-0
               lg:ml-0 lg:p-0 lg:w-auto
               2xl:mt-10%'>
               <p className='text-base ml-8 mb-4

@@ -1,17 +1,42 @@
 import React from 'react'
 import { Link, } from 'react-router-dom';
 
+import { FiShoppingCart } from 'react-icons/fi';
+import { TooltipComponent } from '@syncfusion/ej2-react-popups';
+import { useStateContext } from '../../contexts/ContextProvider';
+import { BUC1 } from '../../components/index';
+
 import { classesBUCardData1, classesBUCardData2, classesUNLCardData1, classesUNLCardData2, classesUNLCardData3, classesUNLCardData4, certificationCardData1, volunteeringCardData1 } from '../../data/dummy';
 import { Header } from '../../components';
 
+const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
+  <TooltipComponent content={title} position="BottomCenter" openDelay={1500} closeDelay={1500}>
+    <button
+      type="button"
+      onClick={() => customFunc()}
+      style={{ color }}
+      className="relative text-xl rounded-full p-3 hover:bg-light-gray"
+    >
+      <span
+        style={{ background: dotColor }}
+        className="absolute inline-flex rounded-full h-2 w-2 right-2 top-2"
+      />
+      {icon}
+    </button>
+  </TooltipComponent>
+);
+
 
 const Education = () => {
+  const { isClicked, currentColor, handleClick } = useStateContext();
 
   return (
-      <div className='flex flex-col h-[94vh] overflow-y-auto
+      <div className='flex flex-col h-[98vh] overflow-y-auto
       md:-mt-16 md:h-screen
       '>
       
+      <NavButton title="Cart" customFunc={() => handleClick('buc1')} color={currentColor} icon={<FiShoppingCart />} />
+
 <div className='bg-white dark:text-gray-100 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl mt-20 z-[999] 2xl:h-[20rem] lg:h-96 h-[33rem]'>
 
 <div className='mb-5 2xl:mb-0 lg:flex'>
@@ -37,8 +62,8 @@ const Education = () => {
     <div className='lg:flex gap-3'>
       {classesBUCardData1.map((item) => (
         <div key={item.title} className='bg-gray-50 dark:text-gray-200 dark:bg-gray-800 w-80 rounded-2xl 2xl:h-24 lg:h-28 hover:drop-shadow-md lg:overflow-hidden overflow-visible mb-3 h-[3.25rem]'>
-        <Link to={`/${item.link}`}>
-
+        <button onClick={() => handleClick(item.link)}>
+        
           <div className='w-full h-[.75rem] bg-gradient-to-r from-purple-300 to-white dark:from-purple-800 dark:to-purple-800 dark:text-gray-300 rounded-2xl flex items-center justify-center' />
 
           <div className='w-full h-4/5 '>
@@ -50,7 +75,7 @@ const Education = () => {
             </p>
           </div>
 
-        </Link>
+        </button>
       </div>
       ))}
     </div>
@@ -243,9 +268,12 @@ const Education = () => {
               </div>
               ))}
             </div>
+
           </div>
         </div>
 
+
+        {isClicked.buc1 && (<BUC1 />)}
       </div>
   )
 }

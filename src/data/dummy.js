@@ -144,7 +144,6 @@ export const homeCardData = [
     title: 'Professional Background',
     description: 'A mixture between analytical and creative. Keeping efficiency and logic in mind without forgetting the target user experience. A summary of work done to build up my resume.',
     link: 'Professional',
-    bend: 'hover:skew-x-2'
   },
   {
     title: 'Resume',
@@ -176,14 +175,14 @@ export const projectsPersonalCardData = [
   },
 ];
 
-export const projectsE36CardData = [
-  {
-    title: 'In Progress',
-    description: 'Check back for track car progress posts',
-    link: 'Projects'
-  },
+// export const projectsE36CardData = [
+//   {
+//     title: 'In Progress',
+//     description: 'Check back for track car progress posts',
+//     link: 'Projects'
+//   },
 
-];
+// ];
 
 export const projectsBUCardData = [
   {
@@ -221,54 +220,54 @@ export const projectsBUCardData = [
 export const classesBUCardData1 = [
   {
     title: 'Foundation of Software Development',
-    // link: 'Education',
+    link: 'buc1',
   },
   {
     title: 'Intro to Programming with Python',
-    // link: 'Education',
+    link: 'buc2',
   },
   {
     title: 'Database Development and Use',
-    // link: 'Education',
+    link: 'buc3',
   },
   {
     title: 'Programming with Java',
-    // link: 'Education',
+    link: 'buc4',
   },
   {
     title: 'Web Development with HTML & CSS',
-    // link: 'Education',
+    link: 'buc5',
   },
   {
     title: 'Intermediate Java Programming',
-    // link: 'Education',
+    link: 'buc6',
   }
 ]
 
 export const classesBUCardData2 = [
   {
     title: 'Secure Software Development',
-    // link: 'Education',
+    link: 'buc7',
   },
   {
     title: 'Advanced Java Programming',
-    // link: 'Education',
+    link: 'buc8',
   },
   {
     title: 'DevOps',
-    // link: 'Education',
+    link: 'buc9',
   },
   {
     title: 'Server Side Development (JavaScript)',
-    // link: 'Education',
+    link: 'buc10',
   },
   {
     title: 'Server-Side Scripting (PHP)',
-    // link: 'Education',
+    link: 'buc11',
   },
   {
     title: 'Capstone in Software Development',
-    // link: 'Education',
+    link: 'buc12',
   },
 ];
 

@@ -54,8 +54,10 @@ const Home = () => {
             <div
               onClick={() => setActiveMenu(( prevActiveMenu ) => ! prevActiveMenu )}
               key={item.title} 
-              className={`bg-white dark:text-gray-200 dark:bg-secondary-dark-bg w-full mb-5 rounded-2xl h-1/3 hover:drop-shadow-xl hover:skew-x-1
+              className={`bg-white dark:text-gray-200 dark:bg-secondary-dark-bg w-full mb-5 rounded-2xl h-1/3 hover:drop-shadow-xl hover:skew-x-1 skew-x-2
               lg:h-2/3 lg:mb-0
+
+              ${item.className}
 
               ${ activeMenu
                 ? '2xl:w-1/4 md:w-[29%]'
